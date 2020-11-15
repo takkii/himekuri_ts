@@ -15,13 +15,21 @@ ruby 2.7.2
 
 > 時刻を表示 : 2020年11月15日 : 10時28分28秒 : 日曜日
 
-#### 実行
+#### 実行 [1.0.2]
 
 ```markdown
 git clone git@github.com:takkii/himekuri_ts.git
 
 cd himekuri_ts
 
+gem install himekuri_ts
+
+himekuri_ts
+```
+
+#### 実行 [1.0.2.1]
+
+```markdown
 gem install himekuri_ts
 
 himekuri_ts

@@ -6,8 +6,9 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require_relative 'himekuri_ts/version'
 
 # $HOME/.nvm/versions/node/v14.15.0/bin/tsc use nvm
-system("$HOME/.nvm/versions/node/v14.15.0/bin/tsc ./lib/himekuri.ts", exception: true)
-system("node ./lib/himekuri.js", exception: true)
+# rubygem update change hiemkuri-x.x.x.x
+system("$HOME/.nvm/versions/node/v14.15.0/bin/tsc $HOME/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/himekuri_ts-1.0.2.1/lib/himekuri.ts", exception: true)
+system("node $HOME/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/himekuri_ts-1.0.2.1/lib/himekuri.js", exception: true)
 
 class HimekuriTsClass
   def self.version
