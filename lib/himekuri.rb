@@ -5,10 +5,9 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 require 'himekuri_ts/version'
 
-
 # $HOME/.nvm/versions/node/v14.15.0/bin/tsc use nvm
-system("$HOME/.nvm/versions/node/v14.15.0/bin/tsc himekuri.ts", exception: true)
-system("node himekuri.js", exception: true)
+system("$HOME/.nvm/versions/node/v14.15.0/bin/tsc ./lib/himekuri.ts", exception: true)
+system("node ./lib/himekuri.js", exception: true)
 
 class HimekuriTs
   def self.version
