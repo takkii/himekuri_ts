@@ -14,6 +14,12 @@ tsc himekuri.ts
 node himekuri.js
 ```
 
+(tsc and node, autorun)
+
+```markdown
+ruby himekuri.rb
+```
+
 #### 現在の出力 (1.0.1)
 
 ```markdown
