@@ -6,8 +6,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Takayuki Kamiyama"]
   spec.email         = ["karuma.reason@gmail.com"]
 
-  spec.summary       = %q{日めくり、TypeScript版}
-  spec.description   = %q{日めくり、TypeScript版}
+  spec.summary       = "日めくり、TypeScript版"
+  spec.description   = "日めくり、TypeScript版"
   # spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
   spec.executables = %w(himekuri_ts)

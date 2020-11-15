@@ -3,7 +3,7 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-require 'lib/himekuri_ts/version'
+require 'himekuri_ts/version'
 
 begin
   system("tsc himekuri.ts", exception: true)
