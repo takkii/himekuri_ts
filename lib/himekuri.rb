@@ -9,7 +9,7 @@ require_relative 'himekuri_ts/version'
 system("$HOME/.nvm/versions/node/v14.15.0/bin/tsc ./lib/himekuri.ts", exception: true)
 system("node ./lib/himekuri.js", exception: true)
 
-class HimekuriTs
+class HimekuriTsClass
   def self.version
 	str = "日めくり数え番号"
 	comma = " : "
@@ -17,6 +17,6 @@ class HimekuriTs
   end
 end
 
-HimekuriTs.version
+HimekuriTsClass.version
 
 __END__
