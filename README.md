@@ -18,7 +18,9 @@ ruby 2.7
 #### 実行
 
 ```markdown
-./himekuri_ts
+gem install himekuri_ts
+
+himekuri_ts
 ```
 
 ※ Rubyでシェル化しました。
