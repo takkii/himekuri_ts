@@ -8,5 +8,5 @@ var TimeNow = str + comma + OneDay.getFullYear() + "年" +
     OneDay.getHours() + "時" +
     OneDay.getMinutes() + "分" +
     OneDay.getSeconds() + "秒" + comma +
-    week[OneDay.getDay()] + "曜日"; // 0は日曜日～6は土曜日
+    week[OneDay.getDay()] + "曜日";
 console.log(TimeNow);
