@@ -3,7 +3,7 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-require 'himekuri_ts/version'
+require_relative 'lib/himekuri_ts/version'
 
 # $HOME/.nvm/versions/node/v14.15.0/bin/tsc use nvm
 system("$HOME/.nvm/versions/node/v14.15.0/bin/tsc ./lib/himekuri.ts", exception: true)
