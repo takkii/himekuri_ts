@@ -6,8 +6,8 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'version/version'
 
 begin
-  system("$HOME/.nvm/versions/node/v14.15.0/bin/tsc lib/himekuri.ts", exception: true)
-  system("node lib/himekuri.js", exception: true)
+  system("tsc himekuri.ts", exception: true)
+  system("node himekuri.js", exception: true)
 rescue Exception => e
   e.printbacktrace
 end
