@@ -14,7 +14,7 @@ tsc himekuri.ts
 node himekuri.js
 ```
 
-(tsc and node, autorun)
+#### 自動実行 (tsc and node)
 
 ```markdown
 ruby himekuri.rb
