@@ -18,7 +18,7 @@ var newTwoDay = ((OneDay.getMonth() + 1) + "月" + (OneDay.getDate() + "日"));
 var dot = ".";
 var newThreeDay = ((OneDay.getMonth() + 1) + dot + (OneDay.getDate()));
 var day = Math.ceil((newYear - newDays) / (60 * 60 * 24 * 1000) - 1);
-var himekuri_version = "1.0.0";
+var himekuri_version = "1.0.1";
 var version = "日めくり数え番号" + comma + himekuri_version;
 console.log(TimeNow);
 console.log("来年の1月1日まであと" + comma + day + "日です");
