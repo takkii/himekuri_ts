@@ -13,7 +13,7 @@ class HimekuriTs
   def self.version
 	str = "日めくり数え番号"
 	comma = " : "
-	puts str.freeze + comma.freeze + HimekuriTsVersion::VERSION
+	puts str.freeze + comma.freeze + HimekuriTs::VERSION
   end
 end
 
