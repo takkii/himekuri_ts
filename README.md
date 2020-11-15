@@ -7,8 +7,8 @@ nvm (version manager)
 node_version: v14.15.0
 typescript: 4.0.5
 
-rbenv
-ruby 2.7
+rbenv (version manager)
+ruby 2.7.2
 ```
 
 デフォルトの出力
