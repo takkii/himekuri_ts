@@ -18,7 +18,7 @@ ruby 2.7.2
 #### 実行
 
 ```markdown
-git@github.com:takkii/himekuri_ts.git
+git clone git@github.com:takkii/himekuri_ts.git
 
 cd himekuri_ts
 
