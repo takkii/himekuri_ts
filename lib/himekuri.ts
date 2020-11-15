@@ -20,10 +20,12 @@ const newTwoDay = ((OneDay.getMonth() + 1)  + "月" + (OneDay.getDate() + "日")
 const dot = ".";
 const newThreeDay = ((OneDay.getMonth() + 1)  + dot + (OneDay.getDate()));
 const day = Math.ceil((newYear-newDays)/(60*60*24*1000) -1);
-const himekuri_version = "1.0.1"
-const version = "日めくり数え番号" + comma + himekuri_version 
+// const himekuri_version = "1.0.1"
+// const version = "日めくり数え番号" + comma + himekuri_version 
 
 console.log(TimeNow);
 console.log("来年の1月1日まであと" + comma + day + "日です");
+
+// R0 → R10 = R010 | R10 Change
 console.log("令和" + ThreeYear + "年" + newTwoDay + comma + "R0" + ThreeYear + dot +  newThreeDay);
-console.log(version);
+// console.log(version);
