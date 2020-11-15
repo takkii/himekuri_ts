@@ -1,5 +1,12 @@
 ### 日めくりの TypeScript 版
 
+#### 環境
+
+```markdown
+nvm (version manager)
+node_version: v14.15.0
+```
+
 デフォルトの出力
 
 > 時刻を表示 : 2020 年 11 月 15 日 : 10 時 28 分 28 秒 : 日曜日
