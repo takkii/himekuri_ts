@@ -6,7 +6,7 @@ const OneYear = OneDay.getFullYear();
 
 const TimeNow = str + comma + OneDay.getFullYear() + "年" +
   (OneDay.getMonth() + 1)  + "月" +
-  OneDay.getDate() + "日" + comma +
+  (OneDay.getDate() - 1)+ "日" + comma +
   OneDay.getHours() + "時" +
   OneDay.getMinutes() + "分" +
   OneDay.getSeconds() + "秒" + comma +
@@ -19,9 +19,9 @@ const ThreeYear = OneYear - 2018;
 const newTwoDay = ((OneDay.getMonth() + 1)  + "月" + (OneDay.getDate() + "日"));
 const dot = ".";
 const newThreeDay = ((OneDay.getMonth() + 1)  + dot + (OneDay.getDate()));
-const day = Math.ceil((newYear-newDays)/(60*60*24*1000));
+const day = Math.ceil((newYear-newDays)/(60*60*24*1000) -1);
 const himekuri_version = "1.0.0"
-const version = "日めくりバージョン" + comma + himekuri_version 
+const version = "日めくり数え番号" + comma + himekuri_version 
 
 console.log(TimeNow);
 console.log("来年の1月1日まであと" + comma + day + "日です");

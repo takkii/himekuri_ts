@@ -5,7 +5,7 @@ var str = "時刻を表示";
 var OneYear = OneDay.getFullYear();
 var TimeNow = str + comma + OneDay.getFullYear() + "年" +
     (OneDay.getMonth() + 1) + "月" +
-    OneDay.getDate() + "日" + comma +
+    (OneDay.getDate() - 1) + "日" + comma +
     OneDay.getHours() + "時" +
     OneDay.getMinutes() + "分" +
     OneDay.getSeconds() + "秒" + comma +
@@ -17,9 +17,9 @@ var ThreeYear = OneYear - 2018;
 var newTwoDay = ((OneDay.getMonth() + 1) + "月" + (OneDay.getDate() + "日"));
 var dot = ".";
 var newThreeDay = ((OneDay.getMonth() + 1) + dot + (OneDay.getDate()));
-var day = Math.ceil((newYear - newDays) / (60 * 60 * 24 * 1000));
+var day = Math.ceil((newYear - newDays) / (60 * 60 * 24 * 1000) - 1);
 var himekuri_version = "1.0.0";
-var version = "日めくりバージョン" + comma + himekuri_version;
+var version = "日めくり数え番号" + comma + himekuri_version;
 console.log(TimeNow);
 console.log("来年の1月1日まであと" + comma + day + "日です");
 console.log("令和" + ThreeYear + "年" + newTwoDay + comma + "R0" + ThreeYear + dot + newThreeDay);
