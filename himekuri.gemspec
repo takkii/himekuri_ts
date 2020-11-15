@@ -1,4 +1,4 @@
-require_relative 'lib/himekuri/version'
+require_relative 'lib/version/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "himekuri_ts"
