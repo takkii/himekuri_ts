@@ -5,6 +5,10 @@
 ```markdown
 nvm (version manager)
 node_version: v14.15.0
+typescript: 4.0.5
+
+rbenv
+ruby 2.7
 ```
 
 デフォルトの出力
