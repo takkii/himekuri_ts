@@ -27,7 +27,7 @@ gem install himekuri_ts
 himekuri_ts
 ```
 
-#### 実行 [1.0.2.1]
+#### 実行 [1.0.2.1 ~ next_version]
 
 ```markdown
 gem install himekuri_ts
