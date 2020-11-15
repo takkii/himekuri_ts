@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module HimekuriTsVersion
+module HimekuriTs
   VERSION = '1.0.2'.freeze
 end
 
