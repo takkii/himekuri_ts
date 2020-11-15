@@ -18,6 +18,10 @@ ruby 2.7.2
 #### 実行
 
 ```markdown
+git@github.com:takkii/himekuri_ts.git
+
+cd himekuri_ts
+
 gem install himekuri_ts
 
 himekuri_ts
