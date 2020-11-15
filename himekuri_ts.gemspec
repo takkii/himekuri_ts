@@ -6,9 +6,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Takayuki Kamiyama"]
   spec.email         = ["karuma.reason@gmail.com"]
 
-  spec.summary       = "日めくり、TypeScript版"
-  spec.description   = "日めくり、TypeScript版"
-  # spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "Japanese calendar himekuri for TypeScript."
+  spec.description   = "日本語版、日めくり。TypeScript版"
+  spec.homepage      = "https://github.com/takkii/himekuri_ts"
   spec.license       = "MIT"
   spec.executables = %w(himekuri_ts)
   spec.metadata = { "github_repo" => "ssh://github.com/takkii/himekuri_ts" }
