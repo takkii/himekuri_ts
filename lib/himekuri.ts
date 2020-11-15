@@ -6,7 +6,7 @@ const OneYear = OneDay.getFullYear();
 
 const TimeNow = str + comma + OneDay.getFullYear() + "年" +
   (OneDay.getMonth() + 1)  + "月" +
-  (OneDay.getDate() - 1)+ "日" + comma +
+  OneDay.getDate()+ "日" + comma +
   OneDay.getHours() + "時" +
   OneDay.getMinutes() + "分" +
   OneDay.getSeconds() + "秒" + comma +
