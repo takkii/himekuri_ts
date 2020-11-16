@@ -20,7 +20,7 @@ class HimekuriTsBasic
     typescript_path = tsc_path + " " +  "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri.ts".to_s
     stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
 
-    puts stdout_ts
+    print stdout_ts
     # puts stderr_ts; puts status_ts
   end
 	
