@@ -7,6 +7,10 @@ require 'open3'
 require_relative 'himekuri_ts/version'
 
 class HimekuriTsBasic
+  # HimekuriTs version.
+  version = (HimekuriTs::VERSION).to_s
+  himekuri_ts = "himekuri_ts-".to_s + version.to_s
+
   def self.before
     # node_version use LTS version
     node_version = "v14.15.0".to_s
@@ -14,23 +18,14 @@ class HimekuriTsBasic
 
     typescript_path = tsc_path + " " +  "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri.ts".to_s
     stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
-
     puts stdout_ts
     # puts stderr_ts; puts status_ts
   end
 	
   def self.after
-    # HimekuriTs version.
-    version = (HimekuriTs::VERSION).to_s
-    himekuri_ts = "himekuri_ts-".to_s + version.to_s
-	
-    # ruby 2.7.2
-    ruby_version = (RUBY_VERSION).to_s
-
     nodejs_path = "node $HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri.js".to_s
-	
-    stdout_js, stderr_js, status_js = Open3.capture3(nodejs_path)
 
+    stdout_js, stderr_js, status_js = Open3.capture3(nodejs_path)
     puts stdout_js
     # puts stderr_js; puts status_js
   end
