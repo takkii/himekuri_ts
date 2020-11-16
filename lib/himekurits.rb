@@ -5,7 +5,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 require_relative 'himekuri_ts/version'
 
-class HimekuriTs
+class HimekuriTsBasic
   def self.onedays
     # HimekuriTs version.
     version = (HimekuriTs::VERSION).to_s
@@ -29,7 +29,5 @@ class HimekuriTsClass
     puts str.freeze + comma.freeze + HimekuriTs::VERSION
   end
 end
-
-HimekuriTsClass.version
 
 __END__
