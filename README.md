@@ -105,4 +105,19 @@ HimekuriTsClass.version
 日めくり数え番号 : 1.0.3.1
 ```
 
+#### 日本語でGitHub_Headの説明 (1.0.3.1 ~)
+
+```markdown
+require 'himekurits'
+
+# tscを実行します (型推論)
+HimekuriTsBasic.before
+
+# node.jsで結果を出力します
+HimekuriTsBasic.after
+
+# 日めくりTSのバージョン情報
+HimekuriTsClass.version
+```
+
 ※ MITライセンスです。
