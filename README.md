@@ -97,10 +97,13 @@ Output
 日めくり数え番号 : 1.0.3
 ```
 
-GitHub HEAD
+GitHub HEAD (1.0.3.1 ~ next future version)
 
 ```markdown
-coming soon.
+時刻を表示 : 2020年11月16日 : 19時27分16秒 : 月曜日
+来年の1月1日まであと : 45日です
+令和2年11月16日 : R02.11.16
+日めくり数え番号 : 1.0.3.1
 ```
 
 ※ MITライセンスです。
