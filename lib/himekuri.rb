@@ -23,9 +23,9 @@ system(nodejs_path, exception: true)
 
 class HimekuriTsClass
   def self.version
-	str = "日めくり数え番号"
-	comma = " : "
-	puts str.freeze + comma.freeze + HimekuriTs::VERSION
+    str = "日めくり数え番号"
+    comma = " : "
+    puts str.freeze + comma.freeze + HimekuriTs::VERSION
   end
 end
 
