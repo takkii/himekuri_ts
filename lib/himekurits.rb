@@ -14,8 +14,9 @@ class HimekuriTsBasic
     # ruby 2.7.2
     ruby_version = (RUBY_VERSION).to_s
 
-    # tsc path use editor autorun.
-    tsc_path= "$HOME/.nvm/versions/node/v14.15.0/bin/tsc".to_s
+    # node_version use LTS version
+	node_version = "v14.15.0"
+    tsc_path= "$HOME/.nvm/versions/node/" + node_version + "/bin/tsc".to_s
 
     typescript_path = tsc_path + " " +  "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri.ts".to_s
     nodejs_path = "node $HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri.js".to_s
