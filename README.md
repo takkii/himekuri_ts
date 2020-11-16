@@ -76,6 +76,20 @@ gem install himekuri_ts-1.0.3.gem
 
 #### GitHub HEAD (1.0.3)
 
+use require call himekurits library.
+
+```markdown
+require 'himekurits'
+
+# himekurits output
+HimekuriTsBasic.onedays
+
+# himekurits version
+HimekuriTsClass.version
+```
+
+Output
+
 ```markdown
 時刻を表示 : 2020年11月16日 : 15時58分7秒 : 月曜日
 来年の1月1日まであと : 45日です
