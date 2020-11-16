@@ -3,18 +3,19 @@
 #### 環境
 
 ```markdown
-nvm (version manager)
+# nvm (version manager)
 node_version: v14.15.0
 typescript: 4.0.5
-※ As long as the path is through tsc, you're good to go. 
+# As long as the path is through tsc, you're good to go. 
 
 rbenv (version manager)
 ruby 2.7.2
 # Set the 2.7.x series to standard
 
 動作確認
-MacOS Big sur
-Ubuntu 20.04.1 LTS
+
+# MacOS Big sur
+# Ubuntu 20.04.1 LTS
 ```
 
 デフォルトの出力
