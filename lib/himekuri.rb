@@ -9,8 +9,8 @@ require_relative 'himekuri_ts/version'
 # typescript_path and nodejs_path.
 # hiemkuri_ts-x.x.x.x, vesion info.
 
-typescript_path = "$HOME/.nvm/versions/node/v14.15.0/bin/tsc $HOME/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/himekuri_ts-1.0.2.2/lib/himekuri.ts".to_s
-nodejs_path = "node $HOME/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/himekuri_ts-1.0.2.2/lib/himekuri.js".to_s
+typescript_path = "$HOME/.nvm/versions/node/v14.15.0/bin/tsc $HOME/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/himekuri_ts-1.0.3/lib/himekuri.ts".to_s
+nodejs_path = "node $HOME/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/himekuri_ts-1.0.3/lib/himekuri.js".to_s
 
 system(typescript_path, exception: true)
 system(nodejs_path, exception: true)
