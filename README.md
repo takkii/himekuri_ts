@@ -9,6 +9,10 @@ typescript: 4.0.5
 
 rbenv (version manager)
 ruby 2.7.2
+
+動作確認
+MacOS Big sur
+Ubuntu 20.04.1 LTS
 ```
 
 デフォルトの出力
