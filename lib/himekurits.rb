@@ -26,8 +26,8 @@ class HimekuriTsBasic
     stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
     stdout_js, stderr_js, status_js = Open3.capture3(nodejs_path)
 
-    puts stdout_ts; #puts stderr_ts; puts status_ts
-	puts stdout_js; #puts stderr_js; puts status_js
+    stdout_ts; #puts stderr_ts; puts status_ts
+	stdout_js; #puts stderr_js; puts status_js
   end
 end
 
