@@ -31,12 +31,24 @@ gem install himekuri_ts
 himekuri_ts
 ```
 
-#### 実行 [1.0.2.1 ~ next_version]
+#### 実行 [1.0.2.1 ~ RubyGems regist_version]
 
 ```markdown
 gem install himekuri_ts
 
 himekuri_ts
+```
+
+#### 実行 [1.0.3 ~ GitHub gem version]
+
+```markdown
+git clone git@github.com:takkii/himekuri_ts.git
+
+cd himekuri_ts
+
+gem build himekuri_ts.gemspec
+
+gem install himekuri_ts-1.0.3.gem
 ```
 
 ※ Rubyでシェル化しました。
