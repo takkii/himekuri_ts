@@ -4,6 +4,7 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 require_relative 'himekuri_ts/version'
+require "open3"
 
 # HimekuriTs version.
 version = (HimekuriTs::VERSION).to_s
@@ -13,9 +14,10 @@ himekuri_ts = "himekuri_ts-".to_s + version.to_s
 ruby_version = (RUBY_VERSION).to_s
 
 # node v14.15.0, LTS upgrade, node version change.
-node_version = system("node -v", exception: true).to_s
+node_version = "node -v"
+stdout, stderr, status = Open3.capture3(node_version)
 
-typescript_path = "$HOME/.nvm/versions/node/" + node_version + "/bin/tsc $HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri.ts".to_s
+typescript_path = "$HOME/.nvm/versions/node/" + stdout.to_s + "/bin/tsc $HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri.ts".to_s
 nodejs_path = "node $HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri.js".to_s
 
 system(typescript_path, exception: true)
