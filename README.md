@@ -84,20 +84,19 @@ require 'himekurits'
 # himekurits output
 HimekuriTsBasic.onedays
 
-# himekurits version
-HimekuriTsClass.version
-```
-
-Output
-
-```markdown
+# output
 時刻を表示 : 2020年11月16日 : 15時58分7秒 : 月曜日
 来年の1月1日まであと : 45日です
 令和2年11月16日 : R02.11.16
+
+# himekurits version
+HimekuriTsClass.version
+
+# output
 日めくり数え番号 : 1.0.3
 ```
 
-GitHub HEAD (1.0.3.1 ~ next future version)
+#### GitHub HEAD (1.0.3.1 ~ next future version)
 
 ```markdown
 時刻を表示 : 2020年11月16日 : 19時27分16秒 : 月曜日
