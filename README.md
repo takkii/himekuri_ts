@@ -6,7 +6,7 @@
 # nvm (version manager)
 node_version: v14.15.0
 typescript: 4.0.5
-# As long as the path is through tsc, you're good to go. 
+# wrote the path to v14.15.0 for the text editor.
 
 rbenv (version manager)
 ruby 2.7.2
@@ -75,6 +75,20 @@ gem install himekuri_ts-1.0.3.gem
 ```
 
 #### GitHub HEAD (1.0.3)
+
+use require call himekurits library.
+
+```markdown
+require 'himekurits'
+
+# himekurits output
+HimekuriTsBasic.onedays
+
+# himekurits version
+HimekuriTsClass.version
+```
+
+Output
 
 ```markdown
 時刻を表示 : 2020年11月16日 : 15時58分7秒 : 月曜日
