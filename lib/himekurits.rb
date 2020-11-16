@@ -3,6 +3,7 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
+require 'open3'
 require_relative 'himekuri_ts/version'
 
 class HimekuriTsBasic
@@ -21,8 +22,12 @@ class HimekuriTsBasic
     typescript_path = tsc_path + " " +  "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri.ts".to_s
     nodejs_path = "node $HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri.js".to_s
 
-    system(typescript_path, exception: true)
-    system(nodejs_path, exception: true)
+
+    stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
+    stdout_js, stderr_js, status_js = Open3.capture3(nodejs_path)
+
+    puts stdout_ts; #puts stderr_ts; puts status_ts
+	puts stdout_js; #puts stderr_js; puts status_js
   end
 end
 
