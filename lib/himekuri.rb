@@ -13,7 +13,7 @@ himekuri_ts = "himekuri_ts-".to_s + version.to_s
 ruby_version = (RUBY_VERSION).to_s
 
 # node v14.15.0, LTS upgrade, node version change.
-node_version = "v14.15.0".to_s
+node_version = system("node -v").to_s
 
 typescript_path = "$HOME/.nvm/versions/node/" + node_version + "/bin/tsc $HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri.ts".to_s
 nodejs_path = "node $HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri.js".to_s
