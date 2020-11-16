@@ -74,7 +74,7 @@ gem install himekuri_ts-1.0.3.gem
 日めくり数え番号 : 1.0.2.2
 ```
 
-#### GitHub HEAD (1.0.3)
+#### RubyGems (1.0.3)
 
 use require call himekurits library.
 
@@ -95,6 +95,12 @@ Output
 来年の1月1日まであと : 45日です
 令和2年11月16日 : R02.11.16
 日めくり数え番号 : 1.0.3
+```
+
+GitHub HEAD
+
+```markdown
+coming soon.
 ```
 
 ※ MITライセンスです。
