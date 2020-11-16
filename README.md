@@ -81,7 +81,7 @@ use require call himekurits library.
 ```markdown
 require 'himekurits'
 
-# himekurits output
+# himekurits, just time now.
 HimekuriTsBasic.onedays
 
 # output
