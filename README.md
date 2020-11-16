@@ -6,7 +6,7 @@
 # nvm (version manager)
 node_version: v14.15.0
 typescript: 4.0.5
-# As long as the path is through tsc, you're good to go. 
+# wrote the path to v14.15.0 for the text editor.
 
 rbenv (version manager)
 ruby 2.7.2
