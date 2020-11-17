@@ -20,8 +20,6 @@ ruby 2.7.2
 # Ubuntu 20.04.1 LTS
 ```
 
-How to Use, link to himekuri_ts-wiki.
-
-[himekuri_ts-wiki](https://github.com/takkii/himekuri_ts/wiki/himekuri_ts-wiki)
+取扱説明書は[himekuri_ts-wiki](https://github.com/takkii/himekuri_ts/wiki/himekuri_ts-wiki)を参照のこと。
 
 ※ MITライセンスです。
