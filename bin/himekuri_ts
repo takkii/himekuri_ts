@@ -8,6 +8,6 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 require 'himekurits'
 
-HimekuriTsBasic.before
-HimekuriTsBasic.after
+print HimekuriTsBasic.before
+puts HimekuriTsBasic.after
 HimekuriTsClass.version
