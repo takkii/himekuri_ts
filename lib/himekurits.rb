@@ -72,7 +72,7 @@ class HimekuriTsBasicWebDays
   end
 end
 
-class HimekuriTsBasicWeb
+class HimekuriTsBasicWebJustNow
   def self.before
     # vesion info
     ruby_version = (RUBY_VERSION).to_s
