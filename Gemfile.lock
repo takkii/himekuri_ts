@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/takkii/himekuri_ts.git
+  revision: e8f2b40492f54a583b7d5078fb8bcd2971b6648f
+  branch: main
+  specs:
+    himekuri_ts (1.0.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -11,7 +18,6 @@ GEM
     diff-lcs (1.4.4)
     e2mmap (0.1.0)
     himekuri (0.1.5)
-    himekuri_ts (1.0.3.1)
     jaro_winkler (1.5.4)
     maruku (0.7.3)
     method_source (1.0.0)
@@ -88,7 +94,7 @@ DEPENDENCIES
   bundler
   byebug
   himekuri
-  himekuri_ts
+  himekuri_ts!
   minitest
   minitest-reporters
   pry
