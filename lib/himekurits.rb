@@ -7,14 +7,15 @@ require 'open3'
 require_relative 'himekuri_ts/version'
 
 class HimekuriTsBasic
+  # Node LTS VERSION update point
+  @@node_version = "v14.15.1".to_s
+
   def self.before
     # vesion info
     ruby_version = (RUBY_VERSION).to_s
     version = (HimekuriTs::VERSION).to_s
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
 
-    # node_version use LTS version
-    @@node_version = "v14.15.1".to_s
     tsc_path= "$HOME/.nvm/versions/node/" + @@node_version + "/bin/tsc".to_s
 
     typescript_path = tsc_path + " " +  "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri.ts".to_s
