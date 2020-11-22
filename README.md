@@ -23,3 +23,5 @@ ruby 2.7.2
 取扱説明書は[himekuri_ts-wiki](https://github.com/takkii/himekuri_ts/wiki/himekuri_ts-wiki)を参照のこと。
 
 ※ MITライセンスです。
+
+_現在のPATH設定では、herokuでhimekuri_tsを使うことはできません。himekuriを使ってください_
