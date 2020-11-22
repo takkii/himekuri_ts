@@ -14,7 +14,7 @@ class HimekuriTsBasic
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
 
     # node_version use LTS version
-    node_version = "v14.15.1".to_s
+    @@node_version = "v14.15.1".to_s
     tsc_path= "$HOME/.nvm/versions/node/" + node_version + "/bin/tsc".to_s
 
     typescript_path = tsc_path + " " +  "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri.ts".to_s
@@ -39,7 +39,7 @@ class HimekuriTsBasic
   end
 end
 
-class HimekuriTsBasicWebDays
+class HimekuriTsBasicWebDays < HimekuriTsBasic
   def self.before
     # vesion info
     ruby_version = (RUBY_VERSION).to_s
@@ -47,7 +47,7 @@ class HimekuriTsBasicWebDays
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
     
     # node_version use LTS version
-    node_version = "v14.15.1".to_s
+    @@node_version
     tsc_path= "$HOME/.nvm/versions/node/" + node_version + "/bin/tsc".to_s
     
     typescript_path = tsc_path + " " +  "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri_web_days.ts".to_s
@@ -72,7 +72,7 @@ class HimekuriTsBasicWebDays
   end
 end
 
-class HimekuriTsBasicWebJustNow
+class HimekuriTsBasicWebJustNow < HimekuriTsBasic
   def self.before
     # vesion info
     ruby_version = (RUBY_VERSION).to_s
@@ -80,7 +80,7 @@ class HimekuriTsBasicWebJustNow
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
     
     # node_version use LTS version
-    node_version = "v14.15.1".to_s
+    @@node_version
     tsc_path= "$HOME/.nvm/versions/node/" + node_version + "/bin/tsc".to_s
     
     typescript_path = tsc_path + " " +  "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri_web_justnow.ts".to_s
@@ -105,7 +105,7 @@ class HimekuriTsBasicWebJustNow
   end
 end
 
-class HimekuriTsBasicWebHimekuri
+class HimekuriTsBasicWebHimekuri < HimekuriTsBasic
   def self.before
     # vesion info
     ruby_version = (RUBY_VERSION).to_s
@@ -113,7 +113,7 @@ class HimekuriTsBasicWebHimekuri
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
     
     # node_version use LTS version
-    node_version = "v14.15.1".to_s
+    @@node_version
     tsc_path= "$HOME/.nvm/versions/node/" + node_version + "/bin/tsc".to_s
     
     typescript_path = tsc_path + " " +  "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri_web_himekuri.ts".to_s
