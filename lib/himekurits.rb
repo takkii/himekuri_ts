@@ -39,16 +39,19 @@ class HimekuriTsBasic
   end
 end
 
-class HimekuriTsBasicWebDays < HimekuriTsBasic
-  def self.before
+class HimekuriTsBasicWeb
+  # Node LTS VERSION update point
+  @@node_version = "v14.15.1".to_s
+  
+  def day_before
     # vesion info
     ruby_version = (RUBY_VERSION).to_s
     version = (HimekuriTs::VERSION).to_s
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
     
     # node_version use LTS version
-    $node_version
-    tsc_path= "$HOME/.nvm/versions/node/" + $node_version + "/bin/tsc".to_s
+    @@node_version
+    tsc_path= "$HOME/.nvm/versions/node/" + @@node_version + "/bin/tsc".to_s
     
     typescript_path = tsc_path + " " +  "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri_web_days.ts".to_s
     stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
@@ -57,7 +60,7 @@ class HimekuriTsBasicWebDays < HimekuriTsBasic
     # puts stderr_ts; puts status_ts
   end
   
-  def self.after
+  def day_after
     # vesion info
     ruby_version = (RUBY_VERSION).to_s
     version = (HimekuriTs::VERSION).to_s
@@ -70,18 +73,16 @@ class HimekuriTsBasicWebDays < HimekuriTsBasic
     stdout_js
     # puts stderr_js; puts status_js
   end
-end
 
-class HimekuriTsBasicWebJustNow < HimekuriTsBasic
-  def self.before
-    # vesion info
+  def now_before
+      # vesion info
     ruby_version = (RUBY_VERSION).to_s
     version = (HimekuriTs::VERSION).to_s
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
     
     # node_version use LTS version
-    $node_version
-    tsc_path= "$HOME/.nvm/versions/node/" + $node_version + "/bin/tsc".to_s
+    @@node_version
+    tsc_path= "$HOME/.nvm/versions/node/" + @@node_version + "/bin/tsc".to_s
     
     typescript_path = tsc_path + " " +  "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri_web_justnow.ts".to_s
     stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
@@ -90,7 +91,7 @@ class HimekuriTsBasicWebJustNow < HimekuriTsBasic
     # puts stderr_ts; puts status_ts
   end
   
-  def self.after
+  def now_after
     # vesion info
     ruby_version = (RUBY_VERSION).to_s
     version = (HimekuriTs::VERSION).to_s
@@ -103,18 +104,16 @@ class HimekuriTsBasicWebJustNow < HimekuriTsBasic
     stdout_js
     # puts stderr_js; puts status_js
   end
-end
 
-class HimekuriTsBasicWebHimekuri < HimekuriTsBasic
-  def self.before
+    def himekuri_before
     # vesion info
     ruby_version = (RUBY_VERSION).to_s
     version = (HimekuriTs::VERSION).to_s
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
     
     # node_version use LTS version
-    $node_version
-    tsc_path= "$HOME/.nvm/versions/node/" + $node_version + "/bin/tsc".to_s
+    @@node_version
+    tsc_path= "$HOME/.nvm/versions/node/" + @@node_version + "/bin/tsc".to_s
     
     typescript_path = tsc_path + " " +  "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri_web_himekuri.ts".to_s
     stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
@@ -123,7 +122,7 @@ class HimekuriTsBasicWebHimekuri < HimekuriTsBasic
     # puts stderr_ts; puts status_ts
   end
   
-  def self.after
+  def himekuri_after
     # vesion info
     ruby_version = (RUBY_VERSION).to_s
     version = (HimekuriTs::VERSION).to_s
