@@ -1,4 +1,4 @@
-# $HOME/.nvm/versions/node/v14.15.0/bin/tsc use nvm.
+# frozen_string_literal: true
 
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
