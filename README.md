@@ -19,6 +19,11 @@ ruby 2.7.2
 
 # MacOS Big sur
 # Ubuntu 20.04.1 LTS
+
+ユニットテスト (rspec)
+
+# rspec
+# rake
 ```
 
 取扱説明書は[himekuri_ts-wiki](https://github.com/takkii/himekuri_ts/wiki/himekuri_ts-wiki)を参照のこと。
