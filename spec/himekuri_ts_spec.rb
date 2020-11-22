@@ -33,7 +33,7 @@ RSpec.describe 'HimekuriTs_DATE' do
 
   it 'has a just now or himekuri (rubygems)' do
     t = Time.new # 今日の日付と時刻
-    timer = t.strftime('%Y年%m月%d日：%H時%M分%S秒')
+    timer = t.strftime('%Y年%m月%d日：%H時%M分%S秒').to_s
     expect(timer).to eq(HimekuriClass.new.himekuri)
   end
 
