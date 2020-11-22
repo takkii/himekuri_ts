@@ -24,6 +24,8 @@ ruby 2.7.2
 
 # rspec
 # rake
+
+※ Travis.ciを設定
 ```
 
 取扱説明書は[himekuri_ts-wiki](https://github.com/takkii/himekuri_ts/wiki/himekuri_ts-wiki)を参照のこと。
