@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 # bundle exec
-require 'rubygems'
 require 'bundler'
 require 'rake'
 require 'rspec/core'
