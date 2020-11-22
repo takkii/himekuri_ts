@@ -15,7 +15,7 @@ class HimekuriTsBasic
 
     # node_version use LTS version
     @@node_version = "v14.15.1".to_s
-    tsc_path= "$HOME/.nvm/versions/node/" + node_version + "/bin/tsc".to_s
+    tsc_path= "$HOME/.nvm/versions/node/" + @@node_version + "/bin/tsc".to_s
 
     typescript_path = tsc_path + " " +  "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri.ts".to_s
     stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
@@ -48,7 +48,7 @@ class HimekuriTsBasicWebDays < HimekuriTsBasic
     
     # node_version use LTS version
     @@node_version
-    tsc_path= "$HOME/.nvm/versions/node/" + node_version + "/bin/tsc".to_s
+    tsc_path= "$HOME/.nvm/versions/node/" + @@node_version + "/bin/tsc".to_s
     
     typescript_path = tsc_path + " " +  "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri_web_days.ts".to_s
     stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
@@ -81,7 +81,7 @@ class HimekuriTsBasicWebJustNow < HimekuriTsBasic
     
     # node_version use LTS version
     @@node_version
-    tsc_path= "$HOME/.nvm/versions/node/" + node_version + "/bin/tsc".to_s
+    tsc_path= "$HOME/.nvm/versions/node/" + @@node_version + "/bin/tsc".to_s
     
     typescript_path = tsc_path + " " +  "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri_web_justnow.ts".to_s
     stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
@@ -114,7 +114,7 @@ class HimekuriTsBasicWebHimekuri < HimekuriTsBasic
     
     # node_version use LTS version
     @@node_version
-    tsc_path= "$HOME/.nvm/versions/node/" + node_version + "/bin/tsc".to_s
+    tsc_path= "$HOME/.nvm/versions/node/" + @@node_version + "/bin/tsc".to_s
     
     typescript_path = tsc_path + " " +  "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri_web_himekuri.ts".to_s
     stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
