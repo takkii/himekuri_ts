@@ -28,11 +28,17 @@ RSpec.describe 'HimekuriTs_DATE' do
   before do
     require 'date'
     require 'himekuri'
+    require 'himekurits'
   end
 
   it 'has a just now or himekuri (rubygems)' do
     t = Time.new # 今日の日付と時刻
     timer = t.strftime('%Y年%m月%d日：%H時%M分%S秒')
     expect(timer).to eq(HimekuriClass.new.himekuri)
+  end
+
+  it 'has a HimekuriTs just now web or nil' do
+    HimekuriTsBasicWebJustNow.before
+    expect(HimekuriTsBasicWebJustNow.after).not_to be nil
   end
 end
