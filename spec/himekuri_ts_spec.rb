@@ -14,6 +14,11 @@ RSpec.describe 'HimekuriTs_VERSION' do
     expect(HimekuriTs::VERSION).not_to be nil
   end
 
+  it 'has a VERSION, himekuri_ts version equal?' do
+    VERSION = '1.0.4'.to_s.freeze
+    expect(HimekuriTs::VERSION).to eq(VERSION)
+  end
+
   it 'does something useful' do
     expect(false).to eq(false)
   end
