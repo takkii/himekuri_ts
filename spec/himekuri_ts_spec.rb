@@ -15,6 +15,6 @@ RSpec.describe 'HimekuriTs' do
   end
 
   it "does something useful" do
-    expect(true).to eq(true)
+    expect(false).to eq(false)
   end
 end
