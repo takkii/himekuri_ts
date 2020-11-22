@@ -14,11 +14,12 @@ class HimekuriTsBasic
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
 
     # node_version use LTS version
-    node_version = "v14.15.0".to_s
+    node_version = "v14.15.1".to_s
     tsc_path= "$HOME/.nvm/versions/node/" + node_version + "/bin/tsc".to_s
 
     typescript_path = tsc_path + " " +  "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri.ts".to_s
-    stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
+    stdout_ts = Open3.capture3(typescript_path)
+    # stderr_ts, status_ts = Open3.capture3(typescript_path)
 
     stdout_ts
     # puts stderr_ts; puts status_ts
@@ -32,7 +33,8 @@ class HimekuriTsBasic
 	
     nodejs_path = "node $HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri.js".to_s
 	
-    stdout_js, stderr_js, status_js = Open3.capture3(nodejs_path)
+    stdout_js = Open3.capture3(nodejs_path)
+    # stderr_js, status_js = Open3.capture3(nodejs_path)
 
     stdout_js
     # puts stderr_js; puts status_js
@@ -47,11 +49,12 @@ class HimekuriTsBasicWebDays
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
     
     # node_version use LTS version
-    node_version = "v14.15.0".to_s
+    node_version = "v14.15.1".to_s
     tsc_path= "$HOME/.nvm/versions/node/" + node_version + "/bin/tsc".to_s
     
     typescript_path = tsc_path + " " +  "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri_web_days.ts".to_s
-    stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
+    stdout_ts = Open3.capture3(typescript_path)
+    # stderr_ts, status_ts = Open3.capture3(typescript_path)
     
     stdout_ts
     # puts stderr_ts; puts status_ts
@@ -65,7 +68,8 @@ class HimekuriTsBasicWebDays
     
     nodejs_path = "node $HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri_web_days.js".to_s
     
-    stdout_js, stderr_js, status_js = Open3.capture3(nodejs_path)
+    stdout_js = Open3.capture3(nodejs_path)
+    # stderr_js, status_js = Open3.capture3(nodejs_path)
     
     stdout_js
     # puts stderr_js; puts status_js
@@ -80,11 +84,12 @@ class HimekuriTsBasicWebJustNow
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
     
     # node_version use LTS version
-    node_version = "v14.15.0".to_s
+    node_version = "v14.15.1".to_s
     tsc_path= "$HOME/.nvm/versions/node/" + node_version + "/bin/tsc".to_s
     
     typescript_path = tsc_path + " " +  "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri_web_justnow.ts".to_s
-    stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
+    stdout_ts = Open3.capture3(typescript_path)
+    # stderr_ts, status_ts = Open3.capture3(typescript_path)
     
     stdout_ts
     # puts stderr_ts; puts status_ts
@@ -98,7 +103,8 @@ class HimekuriTsBasicWebJustNow
     
     nodejs_path = "node $HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri_web_justnow.js".to_s
     
-    stdout_js, stderr_js, status_js = Open3.capture3(nodejs_path)
+    stdout_js = Open3.capture3(nodejs_path)
+    # stderr_js, status_js = Open3.capture3(nodejs_path)
     
     stdout_js
     # puts stderr_js; puts status_js
@@ -113,11 +119,12 @@ class HimekuriTsBasicWebHimekuri
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
     
     # node_version use LTS version
-    node_version = "v14.15.0".to_s
+    node_version = "v14.15.1".to_s
     tsc_path= "$HOME/.nvm/versions/node/" + node_version + "/bin/tsc".to_s
     
     typescript_path = tsc_path + " " +  "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri_web_himekuri.ts".to_s
-    stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
+    stdout_ts = Open3.capture3(typescript_path)
+    # stderr_ts, status_ts = Open3.capture3(typescript_path)
     
     stdout_ts
     # puts stderr_ts; puts status_ts
@@ -131,7 +138,8 @@ class HimekuriTsBasicWebHimekuri
     
     nodejs_path = "node $HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_ts + "/lib/himekuri_web_himekuri.js".to_s
     
-    stdout_js, stderr_js, status_js = Open3.capture3(nodejs_path)
+    stdout_js = Open3.capture3(nodejs_path)
+    # stderr_js, status_js = Open3.capture3(nodejs_path)
     
     stdout_js
     # puts stderr_js; puts status_js
