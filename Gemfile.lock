@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/takkii/himekuri_ts.git
-  revision: e8f2b40492f54a583b7d5078fb8bcd2971b6648f
+  revision: 226a00c7a8d0b803bd5c3131b0bdc8c53ffd7be6
   branch: main
   specs:
     himekuri_ts (1.0.4)
@@ -17,7 +17,7 @@ GEM
     coderay (1.1.3)
     diff-lcs (1.4.4)
     e2mmap (0.1.0)
-    himekuri (0.1.5)
+    himekuri (0.1.7)
     jaro_winkler (1.5.4)
     maruku (0.7.3)
     method_source (1.0.0)
@@ -30,7 +30,7 @@ GEM
       ruby-progressbar
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
-    parallel (1.20.0)
+    parallel (1.20.1)
     parser (2.7.2.0)
       ast (~> 2.4.1)
     pry (0.13.1)
@@ -64,7 +64,7 @@ GEM
       rubocop-ast (>= 0.6.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 2.0)
-    rubocop-ast (1.1.1)
+    rubocop-ast (1.2.0)
       parser (>= 2.7.1.5)
     ruby-prof (1.4.2)
     ruby-progressbar (1.10.1)
