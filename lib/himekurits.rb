@@ -29,6 +29,7 @@ class HimekuriTsBasic
   def self.after
     # vesion info
     ruby_version = (RUBY_VERSION).to_s
+    ruby_folder_version = ("2.7.0").to_s
     version = (HimekuriTs::VERSION).to_s
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
 	
@@ -48,6 +49,7 @@ class HimekuriTsBasicWeb
   def day_before
     # vesion info
     ruby_version = (RUBY_VERSION).to_s
+    ruby_folder_version = ("2.7.0").to_s
     version = (HimekuriTs::VERSION).to_s
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
     
@@ -63,6 +65,7 @@ class HimekuriTsBasicWeb
   def day_after
     # vesion info
     ruby_version = (RUBY_VERSION).to_s
+    ruby_folder_version = ("2.7.0").to_s
     version = (HimekuriTs::VERSION).to_s
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
     
@@ -77,6 +80,7 @@ class HimekuriTsBasicWeb
   def now_before
       # vesion info
     ruby_version = (RUBY_VERSION).to_s
+    ruby_folder_version = ("2.7.0").to_s
     version = (HimekuriTs::VERSION).to_s
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
     
@@ -92,6 +96,7 @@ class HimekuriTsBasicWeb
   def now_after
     # vesion info
     ruby_version = (RUBY_VERSION).to_s
+    ruby_folder_version = ("2.7.0").to_s
     version = (HimekuriTs::VERSION).to_s
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
     
@@ -106,6 +111,7 @@ class HimekuriTsBasicWeb
     def himekuri_before
     # vesion info
     ruby_version = (RUBY_VERSION).to_s
+    ruby_folder_version = ("2.7.0").to_s
     version = (HimekuriTs::VERSION).to_s
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
     
@@ -121,6 +127,7 @@ class HimekuriTsBasicWeb
   def himekuri_after
     # vesion info
     ruby_version = (RUBY_VERSION).to_s
+    ruby_folder_version = ("2.7.0").to_s
     version = (HimekuriTs::VERSION).to_s
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
     
