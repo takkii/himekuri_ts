@@ -4,7 +4,7 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 require 'open3'
-require_relative 'himekuri_ts/version'
+require 'himekuri_ts/version'
 
 class HimekuriTsBasic
   # Node LTS VERSION update point
