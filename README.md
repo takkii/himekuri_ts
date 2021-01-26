@@ -11,8 +11,8 @@ typescript: 4.0.5 <~ 4.1.3
 # wrote the path to v14.15.0 for the text editor.
 
 # rbenv (version manager)
-ruby 2.7.2
-# Set the 2.7.x series to standard
+ruby 3.0.0
+# Set the 3.0.0 series to GitHub head
 
 動作確認
 
@@ -23,8 +23,6 @@ ruby 2.7.2
 
 # rspec
 # rake
-
-※ Travis.ciを設定
 ```
 
 取扱説明書は[himekuri_ts-wiki](https://github.com/takkii/himekuri_ts/wiki/himekuri_ts-wiki)を参照のこと。
