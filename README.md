@@ -6,8 +6,8 @@
 
 ```markdown
 # nvm (version manager)
-node_version: v14.15.2 (RubyGems & GitHub HEAD)
-typescript: 4.0.5 <~ 4.1.3
+node_version: v14.15.4
+typescript: 4.1.3
 # wrote the path to v14.15.0 for the text editor.
 
 # rbenv (version manager)
