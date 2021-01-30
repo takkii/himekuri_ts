@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["karuma.reason@gmail.com"]
 
   spec.summary       = "Japanese calendar himekuri for TypeScript."
-  spec.description   = "himekuri typescript version."
+  spec.description   = "日めくり、TypeScript版"
   spec.homepage      = "https://github.com/takkii/himekuri_ts"
   spec.license       = "MIT"
   spec.executables = %w(himekuri_ts)
