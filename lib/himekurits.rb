@@ -8,7 +8,7 @@ require 'himekuri_ts/version'
 
 class HimekuriTsBasic
   # Node LTS VERSION update point
-  @@node_version = "v14.15.4".to_s
+  @@node_version = "v14.15.5".to_s
 
   def self.before
     # vesion info
@@ -44,7 +44,7 @@ end
 
 class HimekuriTsBasicWeb
   # Node LTS VERSION update point
-  @@node_version = "v14.15.4".to_s
+  @@node_version = "v14.15.5".to_s
   
   def day_before
     # vesion info
