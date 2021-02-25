@@ -6,8 +6,8 @@
 
 ```markdown
 # nvm (version manager)
-node_version: v14.15.4
-typescript: 4.1.3
+node_version: v14.15.5
+typescript: 4.2.2
 # wrote the path to v14.15.0 for the text editor.
 
 # rbenv (version manager)
@@ -17,7 +17,7 @@ ruby 3.0.0
 動作確認
 
 # MacOS Big sur
-# Ubuntu 20.04.1 LTS
+# Ubuntu 20.04.2 LTS
 
 ユニットテスト (rspec)
 
