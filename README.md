@@ -10,9 +10,8 @@ node_version: v14.15.5
 typescript: 4.2.2
 # wrote the path to v14.15.0 for the text editor.
 
-# rbenv (version manager)
-ruby 3.0.0
-# Set the 3.0.0 series to GitHub head
+# rbenv
+ruby
 
 動作確認
 
