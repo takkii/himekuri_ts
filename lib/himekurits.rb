@@ -17,7 +17,7 @@ class HimekuriTsBasic
 
     tsc_path= "$HOME/.nvm/versions/node/" + @@node_version + "/bin/tsc".to_s
 
-    typescript_path = tsc_path + " " + "#{File.dirname(__FILE__)/himekuri.ts}".to_s
+    typescript_path = tsc_path + " " + "#{File.dirname(__FILE__) + '/himekuri.ts'}".to_s
     
     stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
 
@@ -30,7 +30,7 @@ class HimekuriTsBasic
     version = (HimekuriTs::VERSION).to_s
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
     
-    nodejs_path = "node" + " " + "#{File.dirname(__FILE__)/himekuri.js}".to_s
+    nodejs_path = "node" + " " + "#{File.dirname(__FILE__) + '/himekuri.js'}".to_s
 
     stdout_js, stderr_js, status_js = Open3.capture3(nodejs_path)
 
@@ -50,7 +50,7 @@ class HimekuriTsBasicWeb
     
     tsc_path= "$HOME/.nvm/versions/node/" + @@node_version + "/bin/tsc".to_s
 
-    typescript_path = tsc_path + " " + "#{File.dirname(__FILE__)/himekuri_web_days.ts}".to_s
+    typescript_path = tsc_path + " " + "#{File.dirname(__FILE__) + '/himekuri_web_days.ts'}".to_s
     
     stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
     
@@ -63,7 +63,7 @@ class HimekuriTsBasicWeb
     version = (HimekuriTs::VERSION).to_s
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
     
-    nodejs_path = "node" + " " + "#{File.dirname(__FILE__)/himekuri_web_days.js}".to_s
+    nodejs_path = "node" + " " + "#{File.dirname(__FILE__) + '/himekuri_web_days.js'}".to_s
     
     stdout_js, stderr_js, status_js = Open3.capture3(nodejs_path)
     
@@ -78,7 +78,7 @@ class HimekuriTsBasicWeb
     
     tsc_path= "$HOME/.nvm/versions/node/" + @@node_version + "/bin/tsc".to_s
     
-    typescript_path = tsc_path + " " + "#{File.dirname(__FILE__)/himekuri_web_justnow.ts}".to_s
+    typescript_path = tsc_path + " " + "#{File.dirname(__FILE__) + '/himekuri_web_justnow.ts'}".to_s
     
     stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
     
@@ -91,7 +91,7 @@ class HimekuriTsBasicWeb
     version = (HimekuriTs::VERSION).to_s
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
     
-    nodejs_path = "node" + " " + "#{File.dirname(__FILE__)/himekuri_web_justnow.js}".to_s 
+    nodejs_path = "node" + " " + "#{File.dirname(__FILE__) + '/himekuri_web_justnow.js'}".to_s 
     
     stdout_js, stderr_js, status_js = Open3.capture3(nodejs_path)
     
@@ -106,7 +106,7 @@ class HimekuriTsBasicWeb
     
     tsc_path= "$HOME/.nvm/versions/node/" + @@node_version + "/bin/tsc".to_s
     
-    typescript_path = tsc_path + " " + "#{File.dirname(__FILE__)/himekuri_web_himekuri.ts}".to_s
+    typescript_path = tsc_path + " " + "#{File.dirname(__FILE__) + '/himekuri_web_himekuri.ts'}".to_s
     
     stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
     
@@ -119,7 +119,7 @@ class HimekuriTsBasicWeb
     version = (HimekuriTs::VERSION).to_s
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
     
-    nodejs_path = "node" + " " + "#{File.dirname(__FILE__)/himekuri_web_himekuri.js}".to_s
+    nodejs_path = "node" + " " + "#{File.dirname(__FILE__) + '/himekuri_web_himekuri.js'}".to_s
     
     stdout_js, stderr_js, status_js = Open3.capture3(nodejs_path)
     
