@@ -18,7 +18,7 @@ class HimekuriTsBasic
 
     tsc_path= "$HOME/.nvm/versions/node/" + @@node_version + "/bin/tsc".to_s
 
-    typescript_path = tsc_path + " " +  + "#{File.dirname(__FILE__)}/himekuri.ts".to_s
+    typescript_path = tsc_path + " " + "#{File.dirname(__FILE__)}/himekuri.ts".to_s
     stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
 
     stdout_ts
