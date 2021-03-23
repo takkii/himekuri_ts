@@ -6,7 +6,7 @@
 
 ```markdown
 # nvm (version manager)
-node_version: v14.15.5
+node_version: v14.16.0 (GitHub HEAD)
 typescript: 4.2.2
 # wrote the path to v14.15.0 for the text editor.
 
