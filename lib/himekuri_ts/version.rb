@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module HimekuriTs
-  VERSION = '1.0.6'.freeze
+  VERSION = '1.0.7'.freeze
 end
 
 __END__
