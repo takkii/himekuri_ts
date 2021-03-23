@@ -13,7 +13,6 @@ class HimekuriTsBasic
     # vesion info
     ruby_version = (RUBY_VERSION).to_s
     ruby_folder_version = ("3.0.0").to_s
-    himekuri_ts = "himekuri_ts-".to_s + version.to_s
 
     tsc_path= "$HOME/.nvm/versions/node/" + @@node_version + "/bin/tsc".to_s
 
@@ -33,7 +32,6 @@ class HimekuriTsBasicWeb
     # vesion info
     ruby_version = (RUBY_VERSION).to_s
     ruby_folder_version = ("3.0.0").to_s
-    himekuri_ts = "himekuri_ts-".to_s + version.to_s
 
     tsc_path= "$HOME/.nvm/versions/node/" + @@node_version + "/bin/tsc".to_s
 
@@ -48,7 +46,6 @@ class HimekuriTsBasicWeb
     # vesion info
     ruby_version = (RUBY_VERSION).to_s
     ruby_folder_version = ("3.0.0").to_s
-    himekuri_ts = "himekuri_ts-".to_s + version.to_s
 
     tsc_path= "$HOME/.nvm/versions/node/" + @@node_version + "/bin/tsc".to_s
 
@@ -63,7 +60,6 @@ class HimekuriTsBasicWeb
     # vesion info
     ruby_version = (RUBY_VERSION).to_s
     ruby_folder_version = ("3.0.0").to_s
-    himekuri_ts = "himekuri_ts-".to_s + version.to_s
 
     tsc_path= "$HOME/.nvm/versions/node/" + @@node_version + "/bin/tsc".to_s
 
