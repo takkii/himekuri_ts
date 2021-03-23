@@ -4,7 +4,6 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 require 'open3'
-require 'himekuri_ts/version'
 
 class HimekuriTsBasic
   # Node LTS VERSION update point
@@ -19,7 +18,7 @@ class HimekuriTsBasic
 
     tsc_path= "$HOME/.nvm/versions/node/" + @@node_version + "/bin/tsc".to_s
 
-    typescript_path = tsc_path + " " +  "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/" + ruby_folder_version + "/gems/" + himekuri_ts + "/lib/himekuri.ts".to_s
+    typescript_path = tsc_path + " " +  + "#{File.dirname(__FILE__)}/himekuri.ts".to_s
     stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
 
     stdout_ts
@@ -40,7 +39,7 @@ class HimekuriTsBasicWeb
 
     tsc_path= "$HOME/.nvm/versions/node/" + @@node_version + "/bin/tsc".to_s
 
-    typescript_path = tsc_path + " " +  "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/" + ruby_folder_version +  "/gems/" + himekuri_ts + "/lib/himekuri_web_days.ts".to_s
+    typescript_path = tsc_path + " " + "#{File.dirname(__FILE__)}/himekuri_web_days.ts".to_s
     stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
 
     stdout_ts
@@ -56,7 +55,7 @@ class HimekuriTsBasicWeb
 
     tsc_path= "$HOME/.nvm/versions/node/" + @@node_version + "/bin/tsc".to_s
 
-    typescript_path = tsc_path + " " +  "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/" + ruby_folder_version + "/gems/" + himekuri_ts + "/lib/himekuri_web_justnow.ts".to_s
+    typescript_path = tsc_path + " " + "#{File.dirname(__FILE__)}/himekuri_web_justnow.ts".to_s
     stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
 
     stdout_ts
@@ -72,7 +71,7 @@ class HimekuriTsBasicWeb
 
     tsc_path= "$HOME/.nvm/versions/node/" + @@node_version + "/bin/tsc".to_s
 
-    typescript_path = tsc_path + " " +  "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/" + ruby_folder_version + "/gems/" + himekuri_ts + "/lib/himekuri_web_himekuri.ts".to_s
+    typescript_path = tsc_path + " " + "#{File.dirname(__FILE__)}/himekuri_web_himekuri.ts".to_s
     stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
 
     stdout_ts
