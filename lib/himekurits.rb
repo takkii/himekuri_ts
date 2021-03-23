@@ -7,12 +7,12 @@ require 'open3'
 require 'himekuri_ts/version'
 
 class HimekuriTsBasic
-	
+
   def self.running
-    # vesion info
+    # version info
     version = (HimekuriTs::VERSION).to_s
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
-    
+
     nodejs_path = "node" + " " + "#{File.dirname(__FILE__) + '/himekuri.js'}".to_s
 
     stdout_js, stderr_js, status_js = Open3.capture3(nodejs_path)
@@ -23,42 +23,42 @@ class HimekuriTsBasic
 end
 
 class HimekuriTsBasicWeb
-  
+
   def node_running_web_days
-    # vesion info
+    # version info
     version = (HimekuriTs::VERSION).to_s
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
-    
+
     nodejs_path = "node" + " " + "#{File.dirname(__FILE__) + '/himekuri_web_days.js'}".to_s
-    
+
     stdout_js, stderr_js, status_js = Open3.capture3(nodejs_path)
-    
+
     stdout_js
     # puts stderr_js; puts status_js
   end
-  
+
   def node_running_web_now
-    # vesion info
+    # version info
     version = (HimekuriTs::VERSION).to_s
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
-    
-    nodejs_path = "node" + " " + "#{File.dirname(__FILE__) + '/himekuri_web_justnow.js'}".to_s 
-    
+
+    nodejs_path = "node" + " " + "#{File.dirname(__FILE__) + '/himekuri_web_justnow.js'}".to_s
+
     stdout_js, stderr_js, status_js = Open3.capture3(nodejs_path)
-    
+
     stdout_js
     # puts stderr_js; puts status_js
   end
-  
+
   def node_running_web_himekuri
-    # vesion info
+    # version info
     version = (HimekuriTs::VERSION).to_s
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
-    
+
     nodejs_path = "node" + " " + "#{File.dirname(__FILE__) + '/himekuri_web_himekuri.js'}".to_s
-    
+
     stdout_js, stderr_js, status_js = Open3.capture3(nodejs_path)
-    
+
     stdout_js
     # puts stderr_js; puts status_js
   end
