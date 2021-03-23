@@ -5,10 +5,10 @@
 #### 環境
 
 ```markdown
-# nvm (version manager)
+# nvm (node version manager)
 node_version: v14.16.0 (GitHub HEAD)
-typescript: 4.2.2
-# wrote the path to v14.15.0 for the text editor.
+typescript: 4.2.3
+# wrote the path to v14.16.0 for the text editor.
 
 # rbenv
 ruby
@@ -27,5 +27,3 @@ ruby
 取扱説明書は[himekuri_ts-wiki](https://github.com/takkii/himekuri_ts/wiki/himekuri_ts-wiki)を参照のこと。
 
 ※ MITライセンスです。
-
-_現在のPATH設定では、herokuでhimekuri_tsを使うことはできません。himekuriを使ってください_
