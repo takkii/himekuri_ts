@@ -6,12 +6,12 @@
 
 ```markdown
 # nvm (node version manager)
-node_version: v14.16.0 (GitHub HEAD)
+node_version: v14.16.0
 typescript: 4.2.3
+rbenv : ruby
 # wrote the path to v14.16.0 for the text editor.
 
-# rbenv
-ruby
+※ himekuri_tsの1.0.7以降は、tscのpathからバージョン指定しない方向にしました。
 
 動作確認
 
