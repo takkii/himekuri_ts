@@ -11,17 +11,10 @@ typescript: 4.2.3
 rbenv : ruby
 # wrote the path to v14.16.0 for the text editor.
 
-※ himekuri_tsの1.0.7以降は、tscのpathからバージョン指定しない方向にしました。
-
 動作確認
 
 # MacOS Big sur
 # Ubuntu 20.04.2 LTS
-
-ユニットテスト (rspec)
-
-# rspec
-# rake
 ```
 
 取扱説明書は[himekuri_ts-wiki](https://github.com/takkii/himekuri_ts/wiki/himekuri_ts-wiki)を参照のこと。
