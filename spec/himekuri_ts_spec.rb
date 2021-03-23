@@ -38,7 +38,7 @@ RSpec.describe 'HimekuriTs_DATE' do
     expect(timer).to eq(HimekuriClass.new.himekuri)
   end
 
-  it 'has a HimekuriTs just now web or nil' do
+  it 'has a HimekuriTsBasic running methods or nil' do
     HimekuriTsBasic.running
     expect(HimekuriTsBasic.running).not_to be nil
   end
