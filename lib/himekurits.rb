@@ -7,25 +7,8 @@ require 'open3'
 require 'himekuri_ts/version'
 
 class HimekuriTsBasic
-  # Node LTS VERSION update point
-  @@node_version = "v14.16.0".to_s
-
-  def self.before
-    # vesion info
-    version = (HimekuriTs::VERSION).to_s
-    himekuri_ts = "himekuri_ts-".to_s + version.to_s
-
-    tsc_path= "$HOME/.nvm/versions/node/" + @@node_version + "/bin/tsc".to_s
-
-    typescript_path = tsc_path + " " + "#{File.dirname(__FILE__) + '/himekuri.ts'}".to_s
-    
-    stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
-
-    stdout_ts
-    # puts stderr_ts; puts status_ts
-  end
 	
-  def self.after
+  def self.running
     # vesion info
     version = (HimekuriTs::VERSION).to_s
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
@@ -40,25 +23,8 @@ class HimekuriTsBasic
 end
 
 class HimekuriTsBasicWeb
-  # Node LTS VERSION update point
-  @@node_version = "v14.16.0".to_s
   
-  def day_before
-    # vesion info
-    version = (HimekuriTs::VERSION).to_s
-    himekuri_ts = "himekuri_ts-".to_s + version.to_s
-    
-    tsc_path= "$HOME/.nvm/versions/node/" + @@node_version + "/bin/tsc".to_s
-
-    typescript_path = tsc_path + " " + "#{File.dirname(__FILE__) + '/himekuri_web_days.ts'}".to_s
-    
-    stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
-    
-    stdout_ts
-    # puts stderr_ts; puts status_ts
-  end
-  
-  def day_after
+  def node_running_web_days
     # vesion info
     version = (HimekuriTs::VERSION).to_s
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
@@ -70,23 +36,8 @@ class HimekuriTsBasicWeb
     stdout_js
     # puts stderr_js; puts status_js
   end
-
-  def now_before
-      # vesion info
-    version = (HimekuriTs::VERSION).to_s
-    himekuri_ts = "himekuri_ts-".to_s + version.to_s
-    
-    tsc_path= "$HOME/.nvm/versions/node/" + @@node_version + "/bin/tsc".to_s
-    
-    typescript_path = tsc_path + " " + "#{File.dirname(__FILE__) + '/himekuri_web_justnow.ts'}".to_s
-    
-    stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
-    
-    stdout_ts
-    # puts stderr_ts; puts status_ts
-  end
   
-  def now_after
+  def node_running_web_now
     # vesion info
     version = (HimekuriTs::VERSION).to_s
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
@@ -98,23 +49,8 @@ class HimekuriTsBasicWeb
     stdout_js
     # puts stderr_js; puts status_js
   end
-
-    def himekuri_before
-    # vesion info
-    version = (HimekuriTs::VERSION).to_s
-    himekuri_ts = "himekuri_ts-".to_s + version.to_s
-    
-    tsc_path= "$HOME/.nvm/versions/node/" + @@node_version + "/bin/tsc".to_s
-    
-    typescript_path = tsc_path + " " + "#{File.dirname(__FILE__) + '/himekuri_web_himekuri.ts'}".to_s
-    
-    stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
-    
-    stdout_ts
-    # puts stderr_ts; puts status_ts
-  end
   
-  def himekuri_after
+  def node_running_web_himekuri
     # vesion info
     version = (HimekuriTs::VERSION).to_s
     himekuri_ts = "himekuri_ts-".to_s + version.to_s
