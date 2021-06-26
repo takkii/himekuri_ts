@@ -6,7 +6,8 @@
 
 ```markdown
 # nvm (node version manager)
-node_version: v14.16.0
+himekuri_ts: 1.0.8
+node_version: v14.17.1
 typescript: 4.2.3
 rbenv : ruby
 # wrote the path to v14.16.0 for the text editor.
