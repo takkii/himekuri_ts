@@ -1,3 +1,5 @@
+function himekuri(){
+
 const week = ["日","月","火","水","木","金","土"];
 const OneDay = new Date();
 const comma = " : ";
@@ -55,3 +57,6 @@ console.log("来年の1月1日まであと" + comma + day + "日です");
 
 // R0 → R10 = R010 | R10 Change
 console.log("令和" + ThreeYear + "年" + newTwoDay + comma + "R0" + ThreeYear + dot +  newThreeDay);
+}
+
+himekuri()

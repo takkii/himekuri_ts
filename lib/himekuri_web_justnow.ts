@@ -1,10 +1,12 @@
-const week = ["日","月","火","水","木","金","土"];
-const OneDay = new Date();
-const comma = " : ";
-const str = "時刻を表示";
-const OneYear = OneDay.getFullYear();
+function himekuri_web_justnow(){
 
-const TimeNow = str + comma + OneDay.getFullYear() + "年" +
+ const week = ["日","月","火","水","木","金","土"];
+ const OneDay = new Date();
+ const comma = " : ";
+ const str = "時刻を表示";
+ const OneYear = OneDay.getFullYear();
+
+ const TimeNow = str + comma + OneDay.getFullYear() + "年" +
   (OneDay.getMonth() + 1)  + "月" +
   OneDay.getDate()+ "日" + comma +
   OneDay.getHours() + "時" +
@@ -12,9 +14,9 @@ const TimeNow = str + comma + OneDay.getFullYear() + "年" +
   OneDay.getSeconds() + "秒" + comma +
   week[OneDay.getDay()] + "曜日"
 
-const MonthWareki = (OneDay.getMonth()+1)
+ const MonthWareki = (OneDay.getMonth()+1)
 
-if (MonthWareki == 1){
+ if (MonthWareki == 1){
       console.log(TimeNow + comma + "睦月");
     } else if (MonthWareki == 2){
         console.log(TimeNow + comma + "如月");
@@ -38,6 +40,9 @@ if (MonthWareki == 1){
         console.log(TimeNow + comma + "霜月");
     } else if (MonthWareki == 12){
         console.log(TimeNow + comma + "師走");
-} else {
+ } else {
   console.log("警告 : ありえない月です！JavaScriptの記述を確認願います！");
+ }
 }
+
+himekuri_web_justnow()

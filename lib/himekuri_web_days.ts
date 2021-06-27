@@ -1,3 +1,5 @@
+function himekuri_web_days(){
+
 const OneDay = new Date();
 const OneYear = OneDay.getFullYear();
 const TwoYear = OneYear + 1;
@@ -7,3 +9,6 @@ const day = Math.ceil((newYear-newDays)/(60*60*24*1000) -1);
 const comma = " : ";
 
 console.log("来年の1月1日まであと" + comma + day + "日です");
+}
+
+himekuri_web_days()
