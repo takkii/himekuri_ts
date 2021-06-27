@@ -6,7 +6,7 @@
 
 ```markdown
 # nvm (node version manager)
-himekuri_ts: 1.0.8.1
+himekuri_ts: 1.0.8.2 (GitHub_HEAD)
 node_version: v14.17.1
 typescript: 4.3.4
 rbenv : ruby
