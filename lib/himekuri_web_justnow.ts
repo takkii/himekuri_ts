@@ -1,48 +1,39 @@
 function himekuri_web_justnow(){
+let OneWeek: Array<string> = ['日', '月', '火', '水', '木', '金', '土']
+let OneDay: Date = new Date()
+let comma: string = ' : '
+let time_now: string = '時刻を表示'
+let OneYear: number = OneDay.getFullYear()
+const anything_month: number = OneDay.getMonth()
+const OneMonth: number = anything_month + 1
+let anyDays: number = OneDay.getDate()
+let OneHour: number = OneDay.getHours()
+let OneMinute: number = OneDay.getMinutes()
+let OneSecond: number = OneDay.getSeconds()
+let WeekDay: number = OneDay.getDay()
+let anyMonth: Array<string> = ['睦月', '如月', '弥生', '卯月', '皐月', '水無月', '文月', '葉月', '長月', '神無月', '霜月', '師走']
+let something_Month: string = anyMonth[anything_month]
 
- const week = ["日","月","火","水","木","金","土"];
- const OneDay = new Date();
- const comma = " : ";
- const str = "時刻を表示";
- const OneYear = OneDay.getFullYear();
+let TimeNow: string = time_now + comma +
+    (OneYear) + '年' +
+    (OneMonth) + '月' +
+    (anyDays) + '日' + comma +
+    (OneHour) + '時' +
+    (OneMinute) + '分' +
+    (OneSecond) + '秒' + comma +
+    (OneWeek[WeekDay]) + '曜日'
 
- const TimeNow = str + comma + OneDay.getFullYear() + "年" +
-  (OneDay.getMonth() + 1)  + "月" +
-  OneDay.getDate()+ "日" + comma +
-  OneDay.getHours() + "時" +
-  OneDay.getMinutes() + "分" +
-  OneDay.getSeconds() + "秒" + comma +
-  week[OneDay.getDay()] + "曜日"
-
- const MonthWareki = (OneDay.getMonth()+1)
-
- if (MonthWareki == 1){
-      console.log(TimeNow + comma + "睦月");
-    } else if (MonthWareki == 2){
-        console.log(TimeNow + comma + "如月");
-    } else if (MonthWareki == 3){
-        console.log(TimeNow + comma + "弥生");
-    } else if (MonthWareki == 4){
-        console.log(TimeNow + comma + "卯月");
-    } else if (MonthWareki == 5){
-        console.log(TimeNow + comma + "皐月");
-    } else if (MonthWareki == 6){
-        console.log(TimeNow + comma + "水無月");
-    } else if (MonthWareki == 7){
-        console.log(TimeNow + comma + "文月");
-    } else if (MonthWareki == 8){
-        console.log(TimeNow + comma + "葉月");
-    } else if (MonthWareki == 9){
-        console.log(TimeNow + comma + "長月");
-    } else if (MonthWareki == 10){
-        console.log(TimeNow + comma + "神無月");
-    } else if (MonthWareki == 11){
-        console.log(TimeNow + comma + "霜月");
-    } else if (MonthWareki == 12){
-        console.log(TimeNow + comma + "師走");
- } else {
-  console.log("警告 : ありえない月です！JavaScriptの記述を確認願います！");
- }
+try {
+    if (isNaN(OneMonth || anything_month)) {
+        throw new Error('暦の月判定にNaNが表示されました、例外を発生させます!')
+    } else if (something_Month == '') {
+        throw new Error('和風月に空文字列が表示されました、例外を発生させます!')
+    } else {
+        console.log(TimeNow + comma + something_Month)
+    }
+} catch (e) {
+    console.error('例外を補足しました、メッセージです ... ', e.message);
+}
 }
 
 himekuri_web_justnow()
