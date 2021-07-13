@@ -7,16 +7,6 @@ lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 require 'himekurits'
-require 'himekuri_ts/version'
 
 print HimekuriTsBasic.running
-
-class HimekuriTsClass
-  def self.version
-    str = "日めくり数え番号"
-    comma = " : "
-    puts str.freeze + comma.freeze + HimekuriTs::VERSION
-  end
-end
-
 HimekuriTsClass.version

@@ -4,6 +4,7 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 require 'open3'
+require 'himekuri_ts/version'
 
 class HimekuriTsBasic
 
@@ -60,6 +61,14 @@ class HimekuriTsBasicWeb
 
     stdout_js
     # puts stderr_js; puts status_js
+  end
+end
+
+class HimekuriTsClass
+  def self.version
+    str = "日めくり数え番号"
+    comma = " : "
+    puts str.freeze + comma.freeze + HimekuriTs::VERSION
   end
 end
 
