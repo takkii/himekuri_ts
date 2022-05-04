@@ -6,19 +6,12 @@
 
 ```markdown
 # nvm (node version manager)
-himekuri_ts: 1.0.8.2 (GitHub_HEAD)
-node_version: v14.17.2
-typescript: 4.3.4
+himekuri_ts: 1.0.9
+node_version: v16.15.0
+typescript: 4.6.4
 rbenv : ruby
-# Wrote the path to Node.js version is v14.17.1, For the text editor.
 
-動作確認
-
-# MacOS Big sur
-# Ubuntu 20.04.2 LTS (WSL)
-# CentOS 8.1 (WSL)
+# Wrote the path to Node.js version is v16.15.0, For the text editor.
 ```
 
-取扱説明書はhimekuri_tsの[wiki](https://github.com/takkii/himekuri_ts/wiki/himekuri_ts-wiki)を参照のこと。
-
-※ MITライセンスです。
+取扱説明書[wiki](https://github.com/takkii/himekuri_ts/wiki/himekuri_ts-wiki)を参照のこと。
