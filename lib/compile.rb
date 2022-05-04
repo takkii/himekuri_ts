@@ -7,33 +7,33 @@ require 'open3'
 
 class HimekuriTsBasic
   # Node LTS VERSION update point
-  @@node_version = "v14.17.2".to_s
+  @@node_version = "16.15.0".to_s
 
   def self.compile
     # version info
     ruby_version = (RUBY_VERSION).to_s
-    ruby_folder_version = ("3.0.0").to_s
+    ruby_folder_version = ("3.1.0").to_s
 
-    tsc_path = "$HOME/.nvm/versions/node/" + @@node_version + "/bin/tsc".to_s
+    tsc_path = "$HOME/.nodenv/versions/" + @@node_version + "/bin/tsc".to_s
 
     typescript_path = tsc_path + " " + "#{File.dirname(__FILE__)}/himekuri.ts".to_s
     stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
 
-    stdout_ts
+    puts stdout_ts
     # puts stderr_ts; puts status_ts
   end
 end
 
 class HimekuriTsBasicWeb
   # Node LTS VERSION update point
-  @@node_version = "v14.17.2".to_s
+  @@node_version = "16.15.0".to_s
 
   def self.day_compile
     # version info
     ruby_version = (RUBY_VERSION).to_s
-    ruby_folder_version = ("3.0.0").to_s
+    ruby_folder_version = ("3.1.0").to_s
 
-    tsc_path = "$HOME/.nvm/versions/node/" + @@node_version + "/bin/tsc".to_s
+    tsc_path = "$HOME/.nodenv/versions/" + @@node_version + "/bin/tsc".to_s
 
     typescript_path = tsc_path + " " + "#{File.dirname(__FILE__)}/himekuri_web_days.ts".to_s
     stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
@@ -45,9 +45,9 @@ class HimekuriTsBasicWeb
   def self.now_compile
     # version info
     ruby_version = (RUBY_VERSION).to_s
-    ruby_folder_version = ("3.0.0").to_s
+    ruby_folder_version = ("3.1.0").to_s
 
-    tsc_path = "$HOME/.nvm/versions/node/" + @@node_version + "/bin/tsc".to_s
+    tsc_path = "$HOME/.nodenv/versions/" + @@node_version + "/bin/tsc".to_s
 
     typescript_path = tsc_path + " " + "#{File.dirname(__FILE__)}/himekuri_web_justnow.ts".to_s
     stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
@@ -61,7 +61,7 @@ class HimekuriTsBasicWeb
     ruby_version = (RUBY_VERSION).to_s
     ruby_folder_version = ("3.0.0").to_s
 
-    tsc_path = "$HOME/.nvm/versions/node/" + @@node_version + "/bin/tsc".to_s
+    tsc_path = "$HOME/.nodenv/versions/" + @@node_version + "/bin/tsc".to_s
 
     typescript_path = tsc_path + " " + "#{File.dirname(__FILE__)}/himekuri_web_himekuri.ts".to_s
     stdout_ts, stderr_ts, status_ts = Open3.capture3(typescript_path)
