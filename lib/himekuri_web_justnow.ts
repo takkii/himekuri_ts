@@ -1,39 +1,61 @@
-function himekuri_web_justnow(){
-let OneWeek: Array<string> = ['日', '月', '火', '水', '木', '金', '土']
-let OneDay: Date = new Date()
-let comma: string = ' : '
-let time_now: string = '時刻を表示'
-let OneYear: number = OneDay.getFullYear()
-const anything_month: number = OneDay.getMonth()
-const OneMonth: number = anything_month + 1
-let anyDays: number = OneDay.getDate()
-let OneHour: number = OneDay.getHours()
-let OneMinute: number = OneDay.getMinutes()
-let OneSecond: number = OneDay.getSeconds()
-let WeekDay: number = OneDay.getDay()
-let anyMonth: Array<string> = ['睦月', '如月', '弥生', '卯月', '皐月', '水無月', '文月', '葉月', '長月', '神無月', '霜月', '師走']
-let something_Month: string = anyMonth[anything_month]
+class Himekuri{
+    OneWeek: string[];
+    OneDay: Date;
+    comma: string;
+    time_now: string;
+    OneYear: number;
+    anything_month: number;
+    OneMonth: number;
+    OneHour: number;
+    OneMinute:number;
+    OneSecond: number;
+    WeekDay:number
+    anyMonth: string[];
+    something_Month: string;
+    TimeNow: string;
+    anyDays: number;
 
-let TimeNow: string = time_now + comma +
-    (OneYear) + '年' +
-    (OneMonth) + '月' +
-    (anyDays) + '日' + comma +
-    (OneHour) + '時' +
-    (OneMinute) + '分' +
-    (OneSecond) + '秒' + comma +
-    (OneWeek[WeekDay]) + '曜日'
+    constructor(){
+    this.OneWeek = ['日', '月', '火', '水', '木', '金', '土'];
+    this.OneDay = new Date()
+    this.comma = ' : '
+    this.time_now= '時刻を表示'
+    this.OneYear= this.OneDay.getFullYear()
+    this.anything_month = this.OneDay.getMonth()
+    this.OneMonth = this.anything_month + 1
+    this.anyDays = this.OneDay.getDate()
+    this.OneHour = this.OneDay.getHours()
+    this.OneMinute = this.OneDay.getMinutes()
+    this.OneSecond = this.OneDay.getSeconds()
+    this.WeekDay = this.OneDay.getDay()
+    this.anyMonth = ['睦月', '如月', '弥生', '卯月', '皐月', '水無月', '文月', '葉月', '長月', '神無月', '霜月', '師走']
+    this.something_Month = this.anyMonth[this.anything_month]
 
-try {
-    if (isNaN(OneMonth || anything_month)) {
+    this.TimeNow= this.time_now + this.comma +
+    (this.OneYear) + '年' +
+    (this.OneMonth) + '月' +
+    (this.anyDays) + '日' + this.comma +
+    (this.OneHour) + '時' +
+    (this.OneMinute) + '分' +
+    (this.OneSecond) + '秒' + this.comma +
+    (this.OneWeek[this.WeekDay]) + '曜日'
+    }
+
+    justnow(){
+    try {
+    if (isNaN(this.OneMonth || this.anything_month)) {
         throw new Error('暦の月判定にNaNが表示されました、例外を発生させます!')
-    } else if (something_Month == '') {
+    } else if (this.something_Month == '') {
         throw new Error('和風月に空文字列が表示されました、例外を発生させます!')
     } else {
-        console.log(TimeNow + comma + something_Month)
+        console.log(this.TimeNow + this.comma + this.something_Month)
     }
-} catch (e) {
+    }catch (e) {
     console.error('例外を補足しました、メッセージです ... ', e.message);
 }
 }
+}
 
-himekuri_web_justnow()
+const himekuri = new Himekuri();
+himekuri.justnow();
+
