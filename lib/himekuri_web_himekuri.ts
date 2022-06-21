@@ -1,19 +1,33 @@
-function himekuri_web_himekuri(){
+class Himekuri{
+    OneDay: Date;
+    OneYear: any;
+    comma: string;
+    ThreeYear: any;
+    newTwoDay: string;
+    dot: string;
+    newThreeDay: any;
 
-    const OneDay = new Date();
-    const OneYear = OneDay.getFullYear();
-    const comma = " : ";
-    const ThreeYear = OneYear - 2018;
-    const newTwoDay = ((OneDay.getMonth() + 1)  + "月" + (OneDay.getDate() + "日"));
-    const dot = ".";
-    const newThreeDay = ((OneDay.getMonth() + 1)  + dot + (OneDay.getDate()));
+    constructor(){
+    this.OneDay = new Date();
+    this.OneYear = this.OneDay.getFullYear();
+    this.comma = " : ";
+    this.ThreeYear = this.OneYear - 2018;
+    this.newTwoDay = ((this.OneDay.getMonth() + 1)  + "月" + (this.OneDay.getDate() + "日"));
+    this.dot = ".";
+    this.newThreeDay = ((this.OneDay.getMonth() + 1)  + this.dot + (this.OneDay.getDate()));
+    }
 
+    web(){
     // R0 → R10 = R010 | R10 Change
-    if (ThreeYear >= 10){
-        console.log("令和" + ThreeYear + "年" + newTwoDay + comma + "R" + ThreeYear + dot +  newThreeDay);
+    if (this.ThreeYear >= 10){
+        console.log(`令和${this.ThreeYear}年${this.newTwoDay}${this.comma}R${this.ThreeYear}${this.dot}${this.newThreeDay}`);
     } else {
-    console.log("令和" + ThreeYear + "年" + newTwoDay + comma + "R0" + ThreeYear + dot +  newThreeDay);
+        console.log(`令和${this.ThreeYear}年${this.newTwoDay}${this.comma}R0${this.ThreeYear}${this.dot}${this.newThreeDay}`);
     }
 }
+}
 
-himekuri_web_himekuri()
+const himekuri = new Himekuri();
+himekuri.web();
+
+
