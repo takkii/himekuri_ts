@@ -1,74 +1,133 @@
-function himekuri(){
+class Himekuri{
+    week: string[];
+    OneDay: Date;
+    comma: string;
+    str: string;
+    OneYear: any;
+    TimeNow: string;
+    TwoYear: any;
+    newYear: number;
+    newDays: number;
+    ThreeYear: any;
+    newTwoDay: any;
+    dot: string;
+    newThreeDay: any;
+    day: number;
+    MonthWareki: any;
 
-const week = ["日","月","火","水","木","金","土"];
-const OneDay = new Date();
-const comma = " : ";
-const str = "時刻を表示";
-const OneYear = OneDay.getFullYear();
-
-const TimeNow = str + comma + OneDay.getFullYear() + "年" +
-  (OneDay.getMonth() + 1)  + "月" +
-  OneDay.getDate()+ "日" + comma +
-  OneDay.getHours() + "時" +
-  OneDay.getMinutes() + "分" +
-  OneDay.getSeconds() + "秒" + comma +
-  week[OneDay.getDay()] + "曜日"
-
-const TwoYear = OneYear + 1;
-const newYear= new Date(TwoYear+"/1/1").valueOf();
-const newDays = new Date().valueOf();
-const ThreeYear = OneYear - 2018;
-const newTwoDay = ((OneDay.getMonth() + 1)  + "月" + (OneDay.getDate() + "日"));
-const dot = ".";
-const newThreeDay = ((OneDay.getMonth() + 1)  + dot + (OneDay.getDate()));
-const day = Math.ceil((newYear-newDays)/(60*60*24*1000) -1);
-
-const MonthWareki = (OneDay.getMonth()+1)
-
-console.log(TimeNow);
-
-console.log("来年の1月1日まであと" + comma + day + "日です");
-
-// R0 → R10 = R010 | R10 Change
-    if (MonthWareki == 1) {
-        console.log("令和" + ThreeYear + "年" + newTwoDay + comma + "R0" + ThreeYear + dot +  newThreeDay  + comma + "[和風月]" + " → " + "[睦月]");
-    }
-    else if (MonthWareki == 2) {
-        console.log("令和" + ThreeYear + "年" + newTwoDay + comma + "R0" + ThreeYear + dot +  newThreeDay  + comma + "[和風月]" + " → " + "[如月]");
-    }
-    else if (MonthWareki == 3) {
-        console.log("令和" + ThreeYear + "年" + newTwoDay + comma + "R0" + ThreeYear + dot +  newThreeDay  + comma + "[和風月]" + " → " + "[弥生]");
-    }
-    else if (MonthWareki == 4) {
-        console.log("令和" + ThreeYear + "年" + newTwoDay + comma + "R0" + ThreeYear + dot +  newThreeDay  + comma + "[和風月]" + " → " + "[卯月]");
-    }
-    else if (MonthWareki == 5) {
-        console.log("令和" + ThreeYear + "年" + newTwoDay + comma + "R0" + ThreeYear + dot +  newThreeDay  + comma + "[和風月]" + " → " + "[皐月]");
-    }
-    else if (MonthWareki == 6) {
-        console.log("令和" + ThreeYear + "年" + newTwoDay + comma + "R0" + ThreeYear + dot +  newThreeDay  + comma + "[和風月]" + " → " + "[水無月]");
-    }
-    else if (MonthWareki == 7) {
-        console.log("令和" + ThreeYear + "年" + newTwoDay + comma + "R0" + ThreeYear + dot +  newThreeDay  + comma + "[和風月]" + " → " + "[文月]");
-    }
-    else if (MonthWareki == 8) {
-        console.log("令和" + ThreeYear + "年" + newTwoDay + comma + "R0" + ThreeYear + dot +  newThreeDay  + comma + "[和風月]" + " → " + "[葉月]");
-    }
-    else if (MonthWareki == 9) {
-        console.log("令和" + ThreeYear + "年" + newTwoDay + comma + "R0" + ThreeYear + dot +  newThreeDay  + comma + "[和風月]" + " → " + "[長月]");
-    }
-    else if (MonthWareki == 10) {
-        console.log("令和" + ThreeYear + "年" + newTwoDay + comma + "R0" + ThreeYear + dot +  newThreeDay  + comma + "[和風月]" + " → " + "[神無月]");
-    }
-    else if (MonthWareki == 11) {
-        console.log("令和" + ThreeYear + "年" + newTwoDay + comma + "R0" + ThreeYear + dot +  newThreeDay  + comma + "[和風月]" + " → " + "[霜月]");
-    }
-    else if (MonthWareki == 12) {
-        console.log("令和" + ThreeYear + "年" + newTwoDay + comma + "R0" + ThreeYear + dot +  newThreeDay  + comma + "[和風月]" + " → " + "[師走]");
-    }
-    else {
-        console.log("警告" + comma + "ありえない月です！JavaScriptの記述を確認願います！");
-    }
+    constructor(){
+    this.week = ["日","月","火","水","木","金","土"];
+    this.OneDay = new Date();
+    this.comma = " : ";
+    this.str = "時刻を表示";
+    this.OneYear = this.OneDay.getFullYear();
+    this.TimeNow = this.str + this.comma + this.OneDay.getFullYear() + "年" +
+    (this.OneDay.getMonth() + 1)  + "月" +
+    this.OneDay.getDate()+ "日" + this.comma +
+    this.OneDay.getHours() + "時" +
+    this.OneDay.getMinutes() + "分" +
+    this.OneDay.getSeconds() + "秒" + this.comma +
+    this.week[this.OneDay.getDay()] + "曜日"
+    this.TwoYear = this.OneYear + 1;
+    this.newYear= new Date(this.TwoYear+"/1/1").valueOf();
+    this.newDays = new Date().valueOf();
+    this.ThreeYear = this.OneYear - 2018;
+    this.newTwoDay = ((this.OneDay.getMonth() + 1)  + "月" + (this.OneDay.getDate() + "日"));
+    this.dot = ".";
+    this.newThreeDay = ((this.OneDay.getMonth() + 1)  + this.dot + (this.OneDay.getDate()));
+    this.day = Math.ceil((this.newYear-this.newDays)/(60*60*24*1000) -1);
+    this.MonthWareki = (this.OneDay.getMonth()+1)
 }
 
-himekuri()
+koyomi(){
+console.log(this.TimeNow);
+console.log("来年の1月1日まであと" + this.comma + this.day + "日です");
+
+// R0 → R10 = R010 | R10 Change
+if (this.ThreeYear >= 10) {
+    if (this.MonthWareki == 1) {
+        console.log("令和" + this.ThreeYear + "年" + this.newTwoDay + this.comma + "R" + this.ThreeYear + this.dot +  this.newThreeDay  + this.comma + "[和風月]" + " → " + "[睦月]");
+    }
+    else if (this.MonthWareki == 2) {
+        console.log("令和" + this.ThreeYear + "年" + this.newTwoDay + this.comma + "R" + this.ThreeYear + this.dot +  this.newThreeDay  + this.comma + "[和風月]" + " → " + "[如月]");
+    }
+    else if (this.MonthWareki == 3) {
+        console.log("令和" + this.ThreeYear + "年" + this.newTwoDay + this.comma + "R" + this.ThreeYear + this.dot +  this.newThreeDay  + this.comma + "[和風月]" + " → " + "[弥生]");
+    }
+    else if (this.MonthWareki == 4) {
+        console.log("令和" + this.ThreeYear + "年" + this.newTwoDay + this.comma + "R" + this.ThreeYear + this.dot +  this.newThreeDay  + this.comma + "[和風月]" + " → " + "[卯月]");
+    }
+    else if (this.MonthWareki == 5) {
+        console.log("令和" + this.ThreeYear + "年" + this.newTwoDay + this.comma + "R" + this.ThreeYear + this.dot +  this.newThreeDay  + this.comma + "[和風月]" + " → " + "[皐月]");
+    }
+    else if (this.MonthWareki == 6) {
+        console.log("令和" + this.ThreeYear + "年" + this.newTwoDay + this.comma + "R" + this.ThreeYear + this.dot +  this.newThreeDay  + this.comma + "[和風月]" + " → " + "[水無月]");
+    }
+    else if (this.MonthWareki == 7) {
+        console.log("令和" + this.ThreeYear + "年" + this.newTwoDay + this.comma + "R" + this.ThreeYear + this.dot +  this.newThreeDay  + this.comma + "[和風月]" + " → " + "[文月]");
+    }
+    else if (this.MonthWareki == 8) {
+        console.log("令和" + this.ThreeYear + "年" + this.newTwoDay + this.comma + "R" + this.ThreeYear + this.dot +  this.newThreeDay  + this.comma + "[和風月]" + " → " + "[葉月]");
+    }
+    else if (this.MonthWareki == 9) {
+        console.log("令和" + this.ThreeYear + "年" + this.newTwoDay + this.comma + "R" + this.ThreeYear + this.dot +  this.newThreeDay  + this.comma + "[和風月]" + " → " + "[長月]");
+    }
+    else if (this.MonthWareki == 10) {
+        console.log("令和" + this.ThreeYear + "年" + this.newTwoDay + this.comma + "R" + this.ThreeYear + this.dot +  this.newThreeDay  + this.comma + "[和風月]" + " → " + "[神無月]");
+    }
+    else if (this.MonthWareki == 11) {
+        console.log("令和" + this.ThreeYear + "年" + this.newTwoDay + this.comma + "R" + this.ThreeYear + this.dot +  this.newThreeDay  + this.comma + "[和風月]" + " → " + "[霜月]");
+    }
+    else if (this.MonthWareki == 12) {
+        console.log("令和" + this.ThreeYear + "年" + this.newTwoDay + this.comma + "R" + this.ThreeYear + this.dot +  this.newThreeDay  + this.comma + "[和風月]" + " → " + "[師走]");
+    }
+    else {
+        console.log("警告" + this.comma + "ありえない月です！JavaScriptの記述を確認願います！");
+    }
+    } else {
+    if (this.MonthWareki == 1) {
+        console.log("令和" + this.ThreeYear + "年" + this.newTwoDay + this.comma + "R0" + this.ThreeYear + this.dot +  this.newThreeDay  + this.comma + "[和風月]" + " → " + "[睦月]");
+    }
+    else if (this.MonthWareki == 2) {
+        console.log("令和" + this.ThreeYear + "年" + this.newTwoDay + this.comma + "R0" + this.ThreeYear + this.dot +  this.newThreeDay  + this.comma + "[和風月]" + " → " + "[如月]");
+    }
+    else if (this.MonthWareki == 3) {
+        console.log("令和" + this.ThreeYear + "年" + this.newTwoDay + this.comma + "R0" + this.ThreeYear + this.dot +  this.newThreeDay  + this.comma + "[和風月]" + " → " + "[弥生]");
+    }
+    else if (this.MonthWareki == 4) {
+        console.log("令和" + this.ThreeYear + "年" + this.newTwoDay + this.comma + "R0" + this.ThreeYear + this.dot +  this.newThreeDay  + this.comma + "[和風月]" + " → " + "[卯月]");
+    }
+    else if (this.MonthWareki == 5) {
+        console.log("令和" + this.ThreeYear + "年" + this.newTwoDay + this.comma + "R0" + this.ThreeYear + this.dot +  this.newThreeDay  + this.comma + "[和風月]" + " → " + "[皐月]");
+    }
+    else if (this.MonthWareki == 6) {
+        console.log("令和" + this.ThreeYear + "年" + this.newTwoDay + this.comma + "R0" + this.ThreeYear + this.dot +  this.newThreeDay  + this.comma + "[和風月]" + " → " + "[水無月]");
+    }
+    else if (this.MonthWareki == 7) {
+        console.log("令和" + this.ThreeYear + "年" + this.newTwoDay + this.comma + "R0" + this.ThreeYear + this.dot +  this.newThreeDay  + this.comma + "[和風月]" + " → " + "[文月]");
+    }
+    else if (this.MonthWareki == 8) {
+        console.log("令和" + this.ThreeYear + "年" + this.newTwoDay + this.comma + "R0" + this.ThreeYear + this.dot +  this.newThreeDay  + this.comma + "[和風月]" + " → " + "[葉月]");
+    }
+    else if (this.MonthWareki == 9) {
+        console.log("令和" + this.ThreeYear + "年" + this.newTwoDay + this.comma + "R0" + this.ThreeYear + this.dot +  this.newThreeDay  + this.comma + "[和風月]" + " → " + "[長月]");
+    }
+    else if (this.MonthWareki == 10) {
+        console.log("令和" + this.ThreeYear + "年" + this.newTwoDay + this.comma + "R0" + this.ThreeYear + this.dot +  this.newThreeDay  + this.comma + "[和風月]" + " → " + "[神無月]");
+    }
+    else if (this.MonthWareki == 11) {
+        console.log("令和" + this.ThreeYear + "年" + this.newTwoDay + this.comma + "R0" + this.ThreeYear + this.dot +  this.newThreeDay  + this.comma + "[和風月]" + " → " + "[霜月]");
+    }
+    else if (this.MonthWareki == 12) {
+        console.log("令和" + this.ThreeYear + "年" + this.newTwoDay + this.comma + "R0" + this.ThreeYear + this.dot +  this.newThreeDay  + this.comma + "[和風月]" + " → " + "[師走]");
+    }
+    else {
+        console.log("警告" + this.comma + "ありえない月です！JavaScriptの記述を確認願います！");
+    }
+}
+}
+}
+
+
+const himekuri = new Himekuri();
+himekuri.koyomi();
