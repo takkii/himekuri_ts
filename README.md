@@ -6,12 +6,12 @@
 
 ```markdown
 # nvm (node version manager)
-himekuri_ts: 1.0.9
-node_version: v16.15.0
-typescript: 4.6.4
-rbenv : ruby
+himekuri_ts: 1.1.0
+node_version: v16.15.1
+typescript: 4.7.4
+rbenv : 3.1.2
 
-# Wrote the path to Node.js version is v16.15.0, For the text editor.
+# Wrote the path to Node.js version is v16.15.1, For the text editor.
 ```
 
 取扱説明書[wiki](https://github.com/takkii/himekuri_ts/wiki/himekuri_ts-wiki)を参照のこと。
