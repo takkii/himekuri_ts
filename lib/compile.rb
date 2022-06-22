@@ -7,7 +7,7 @@ require 'open3'
 
 class HimekuriTsBasic
   # Node LTS VERSION update point
-  @@node_version = "16.15.0".to_s
+  @@node_version = "16.15.1".to_s
 
   def self.compile
     # version info
@@ -26,7 +26,7 @@ end
 
 class HimekuriTsBasicWeb
   # Node LTS VERSION update point
-  @@node_version = "16.15.0".to_s
+  @@node_version = "16.15.1".to_s
 
   def self.day_compile
     # version info
