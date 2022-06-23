@@ -6,6 +6,9 @@
 /pkg/
 /spec/reports/
 /tmp/
+/lib/node_modules
+/lib/package.json
+/lib/package-lock.json
 
 # rspec failure tracking
 .rspec_status
