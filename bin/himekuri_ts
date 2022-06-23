@@ -9,5 +9,4 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'himekurits'
 
 print HimekuriTsBasic.running
-print ' | ' + HimekuriTsBasicWeb.new.node_running_web_locale
 HimekuriTsClass.version
