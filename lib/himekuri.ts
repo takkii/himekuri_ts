@@ -14,6 +14,8 @@ class Himekuri{
     newThreeDay: any;
     day: number;
     MonthWareki: any;
+    env: any;
+    language: any;
 
     constructor(){
     this.week = ["日","月","火","水","木","金","土"];
@@ -37,11 +39,19 @@ class Himekuri{
     this.newThreeDay = ((this.OneDay.getMonth() + 1)  + this.dot + (this.OneDay.getDate()));
     this.day = Math.ceil((this.newYear-this.newDays)/(60*60*24*1000) -1);
     this.MonthWareki = (this.OneDay.getMonth()+1)
+    this.env = process.env;
+    this.language = this.env.LANG || this.env.LANGUAGE || this.env.LC_ALL || this.env.LC_MESSAGES;
 }
 
 koyomi(){
-console.log(this.TimeNow);
-console.log("来年の1月1日まであと" + this.comma + this.day + "日です");
+    // console.log(this.env)
+    if (this.language == "ja_JP.UTF-8"){
+        console.log(`${this.TimeNow} : 日本語`);
+        console.log("来年の1月1日まであと" + this.comma + this.day + "日です");
+    } else {
+        console.log(`${this.TimeNow} : ${this.language}`);
+        console.log("来年の1月1日まであと" + this.comma + this.day + "日です");
+}
 
 // R0 → R10 = R010 | R10 Change
 if (this.ThreeYear >= 10) {
