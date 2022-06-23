@@ -8,8 +8,12 @@ class Env{
     }
 
     run(){
-    // console.log(env)
-    console.log(this.language)
+    // console.log(this.env)
+    if (this.language == "ja_JP.UTF-8"){
+        console.log(`日本語`)
+    }else {
+        console.log(`${this.language}`)
+    }
 }
 }
 
