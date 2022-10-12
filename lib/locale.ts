@@ -11,7 +11,9 @@ class Env{
     // console.log(this.env)
     if (this.language == "ja_JP.UTF-8"){
         console.log(`日本語`)
-    }else {
+    } else if (this.language == "C.UTF-8"){
+        console.log(`英語圏`)
+    } else {
         console.log(`${this.language}`)
     }
 }
