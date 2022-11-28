@@ -7,7 +7,7 @@ require 'open3'
 
 class HimekuriTsBasic
   # Node LTS VERSION update point
-  @@node_version = "16.15.1".to_s
+  @@node_version = "18.12.1".to_s
 
   def self.compile
     tsc_path = "$HOME/.nodenv/versions/" + @@node_version + "/bin/tsc".to_s
@@ -15,14 +15,24 @@ class HimekuriTsBasic
     typescript_path = tsc_path + " " + "#{File.dirname(__FILE__)}/himekuri.ts".to_s
     stdout_ts = Open3.capture3(typescript_path)
 
-    puts stdout_ts
+    stdout_ts
+    # puts stderr_ts; puts status_ts
+  end
+
+  def self.compile_locale
+    tsc_path = "$HOME/.nodenv/versions/" + @@node_version + "/bin/tsc".to_s
+
+    typescript_path = tsc_path + " " + "#{File.dirname(__FILE__)}/locale.ts".to_s
+    stdout_ts = Open3.capture3(typescript_path)
+
+    stdout_ts
     # puts stderr_ts; puts status_ts
   end
 end
 
 class HimekuriTsBasicWeb
   # Node LTS VERSION update point
-  @@node_version = "16.15.1".to_s
+  @@node_version = "18.12.1".to_s
 
   def self.day_compile
     tsc_path = "$HOME/.nodenv/versions/" + @@node_version + "/bin/tsc".to_s
@@ -56,6 +66,7 @@ class HimekuriTsBasicWeb
 end
 
 HimekuriTsBasic.compile
+HimekuriTsBasic.compile_locale
 HimekuriTsBasicWeb.day_compile
 HimekuriTsBasicWeb.now_compile
 HimekuriTsBasicWeb.himekuri_compile
