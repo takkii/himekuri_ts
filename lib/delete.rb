@@ -1,53 +1,39 @@
 # frozen_string_literal: true
 
-lib = File.expand_path('../lib', __FILE__)
+lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
+require 'fileutils'
 require 'open3'
 
+# HimekuriTsBasic delete instance.
 class HimekuriTsBasic
-
   def self.delete
+    FileUtils.rm_rf("#{File.dirname(__FILE__)}/himekuri.js")
+  end
 
-    delete_path = "rm -rf " + "#{File.dirname(__FILE__)}/himekuri.js".to_s
-    stdout_ts, stderr_ts, status_ts = Open3.capture3(delete_path)
-
-    stdout_ts
-    # puts stderr_ts; puts status_ts
+  def self.delete_locale
+    FileUtils.rm_rf("#{File.dirname(__FILE__)}/locale.js")
   end
 end
 
+# HimekuriTsBasicWeb delete instance.
 class HimekuriTsBasicWeb
-
   def self.day_delete
-
-    delete_path = "rm -rf " + "#{File.dirname(__FILE__)}/himekuri_web_days.js".to_s
-    stdout_ts, stderr_ts, status_ts = Open3.capture3(delete_path)
-
-    stdout_ts
-    # puts stderr_ts; puts status_ts
+    FileUtils.rm_rf("#{File.dirname(__FILE__)}/himekuri_web_days.js")
   end
 
   def self.now_delete
-
-    delete_path = "rm -rf " + "#{File.dirname(__FILE__)}/himekuri_web_justnow.js".to_s
-    stdout_ts, stderr_ts, status_ts = Open3.capture3(delete_path)
-
-    stdout_ts
-    # puts stderr_ts; puts status_ts
+    FileUtils.rm_rf("#{File.dirname(__FILE__)}/himekuri_web_justnow.js")
   end
 
   def self.himekuri_delete
-
-    delete_path = "rm -rf " + "#{File.dirname(__FILE__)}/himekuri_web_himekuri.js".to_s
-    stdout_ts, stderr_ts, status_ts = Open3.capture3(delete_path)
-
-    stdout_ts
-    # puts stderr_ts; puts status_ts
+    FileUtils.rm_rf("#{File.dirname(__FILE__)}/himekuri_web_himekuri.js")
   end
 end
 
 HimekuriTsBasic.delete
+HimekuriTsBasic.delete_locale
 HimekuriTsBasicWeb.day_delete
 HimekuriTsBasicWeb.now_delete
 HimekuriTsBasicWeb.himekuri_delete
