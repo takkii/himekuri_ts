@@ -5,7 +5,7 @@ require 'minitest'
 require 'minitest/autorun'
 require 'minitest/unit'
 require 'minitest/reporters'
-require 'minitest/runner'
+require 'minitest/mini_runner'
 require 'himekurits'
 require 'tanraku'
 # --------------------------------------
@@ -22,7 +22,7 @@ class MiniTestFile
 
   def initialize
     encoding_style
-    @mini_test = Mini_Runner(true, '/GitHub/himekuri_ts/mini_test')
+    @mini_test = Mini(true, '/GitHub/himekuri_ts/mini_test')
   end
 
   def remove
