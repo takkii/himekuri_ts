@@ -4,7 +4,6 @@ require 'date'
 require 'himekuri'
 require 'himekurits'
 require 'minitest/autorun'
-require 'minitest/reporters'
 
 # Himekurits Class equal
 class MiniHimekurits < Minitest::Test
