@@ -8,6 +8,8 @@
 /tmp/
 /node_modules
 
+Gemfile.lock
+
 # rspec failure tracking
 .rspec_status
 
