@@ -1,7 +1,6 @@
 require 'minitest'
 require 'minitest/autorun'
 require 'minitest/benchmark'
-require 'minitest/reporters'
 require 'date'
 require 'himekuri'
 require 'himekuri_ts/version'
