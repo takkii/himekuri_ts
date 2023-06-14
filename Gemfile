@@ -3,12 +3,12 @@
 source "https://rubygems.org"
 
 gem 'bundler'
-gem 'byebug'
+#gem 'byebug'
 gem 'himekuri'
 gem 'minitest'
-gem 'pry'
+#gem 'pry'
 gem 'rake'
-gem "rexml", ">= 3.2.5"
+#gem "rexml", ">= 3.2.5"
 gem 'rspec'
-gem 'ruby-prof'
-gem 'solargraph'
+#gem 'ruby-prof'
+#gem 'solargraph'
