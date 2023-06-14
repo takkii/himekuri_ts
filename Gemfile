@@ -6,7 +6,6 @@ gem 'bundler'
 gem 'byebug'
 gem 'himekuri'
 gem 'minitest'
-gem 'minitest-reporters'
 gem 'pry'
 gem 'rake'
 gem "rexml", ">= 3.2.5"
