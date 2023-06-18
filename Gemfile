@@ -4,7 +4,6 @@ source "https://rubygems.org"
 
 gem 'bundler'
 #gem 'byebug'
-gem 'himekuri'
 gem 'minitest'
 #gem 'pry'
 gem 'rake'
